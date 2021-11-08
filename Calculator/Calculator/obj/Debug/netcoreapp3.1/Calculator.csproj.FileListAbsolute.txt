@@ -1,0 +1,14 @@
+C:\Users\Joshua.knights\Work\Training\Training\Calculator\Calculator\bin\Debug\netcoreapp3.1\Calculator.exe
+C:\Users\Joshua.knights\Work\Training\Training\Calculator\Calculator\bin\Debug\netcoreapp3.1\Calculator.deps.json
+C:\Users\Joshua.knights\Work\Training\Training\Calculator\Calculator\bin\Debug\netcoreapp3.1\Calculator.runtimeconfig.json
+C:\Users\Joshua.knights\Work\Training\Training\Calculator\Calculator\bin\Debug\netcoreapp3.1\Calculator.runtimeconfig.dev.json
+C:\Users\Joshua.knights\Work\Training\Training\Calculator\Calculator\bin\Debug\netcoreapp3.1\Calculator.dll
+C:\Users\Joshua.knights\Work\Training\Training\Calculator\Calculator\bin\Debug\netcoreapp3.1\Calculator.pdb
+C:\Users\Joshua.knights\Work\Training\Training\Calculator\Calculator\obj\Debug\netcoreapp3.1\Calculator.csproj.AssemblyReference.cache
+C:\Users\Joshua.knights\Work\Training\Training\Calculator\Calculator\obj\Debug\netcoreapp3.1\Calculator.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Joshua.knights\Work\Training\Training\Calculator\Calculator\obj\Debug\netcoreapp3.1\Calculator.AssemblyInfoInputs.cache
+C:\Users\Joshua.knights\Work\Training\Training\Calculator\Calculator\obj\Debug\netcoreapp3.1\Calculator.AssemblyInfo.cs
+C:\Users\Joshua.knights\Work\Training\Training\Calculator\Calculator\obj\Debug\netcoreapp3.1\Calculator.csproj.CoreCompileInputs.cache
+C:\Users\Joshua.knights\Work\Training\Training\Calculator\Calculator\obj\Debug\netcoreapp3.1\Calculator.dll
+C:\Users\Joshua.knights\Work\Training\Training\Calculator\Calculator\obj\Debug\netcoreapp3.1\Calculator.pdb
+C:\Users\Joshua.knights\Work\Training\Training\Calculator\Calculator\obj\Debug\netcoreapp3.1\Calculator.genruntimeconfig.cache

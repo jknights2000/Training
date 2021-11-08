@@ -1,0 +1,13 @@
+C:\Users\Joshua.knights\Work\Training\Training\Adder\Adder\bin\Debug\netcoreapp3.1\Adder.exe
+C:\Users\Joshua.knights\Work\Training\Training\Adder\Adder\bin\Debug\netcoreapp3.1\Adder.deps.json
+C:\Users\Joshua.knights\Work\Training\Training\Adder\Adder\bin\Debug\netcoreapp3.1\Adder.runtimeconfig.json
+C:\Users\Joshua.knights\Work\Training\Training\Adder\Adder\bin\Debug\netcoreapp3.1\Adder.runtimeconfig.dev.json
+C:\Users\Joshua.knights\Work\Training\Training\Adder\Adder\bin\Debug\netcoreapp3.1\Adder.dll
+C:\Users\Joshua.knights\Work\Training\Training\Adder\Adder\bin\Debug\netcoreapp3.1\Adder.pdb
+C:\Users\Joshua.knights\Work\Training\Training\Adder\Adder\obj\Debug\netcoreapp3.1\Adder.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Joshua.knights\Work\Training\Training\Adder\Adder\obj\Debug\netcoreapp3.1\Adder.AssemblyInfoInputs.cache
+C:\Users\Joshua.knights\Work\Training\Training\Adder\Adder\obj\Debug\netcoreapp3.1\Adder.AssemblyInfo.cs
+C:\Users\Joshua.knights\Work\Training\Training\Adder\Adder\obj\Debug\netcoreapp3.1\Adder.csproj.CoreCompileInputs.cache
+C:\Users\Joshua.knights\Work\Training\Training\Adder\Adder\obj\Debug\netcoreapp3.1\Adder.dll
+C:\Users\Joshua.knights\Work\Training\Training\Adder\Adder\obj\Debug\netcoreapp3.1\Adder.pdb
+C:\Users\Joshua.knights\Work\Training\Training\Adder\Adder\obj\Debug\netcoreapp3.1\Adder.genruntimeconfig.cache

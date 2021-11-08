@@ -1,0 +1,13 @@
+C:\Users\Joshua.knights\Work\Training\Training\Greeting\Greeting\bin\Debug\netcoreapp3.1\Greeting.exe
+C:\Users\Joshua.knights\Work\Training\Training\Greeting\Greeting\bin\Debug\netcoreapp3.1\Greeting.deps.json
+C:\Users\Joshua.knights\Work\Training\Training\Greeting\Greeting\bin\Debug\netcoreapp3.1\Greeting.runtimeconfig.json
+C:\Users\Joshua.knights\Work\Training\Training\Greeting\Greeting\bin\Debug\netcoreapp3.1\Greeting.runtimeconfig.dev.json
+C:\Users\Joshua.knights\Work\Training\Training\Greeting\Greeting\bin\Debug\netcoreapp3.1\Greeting.dll
+C:\Users\Joshua.knights\Work\Training\Training\Greeting\Greeting\bin\Debug\netcoreapp3.1\Greeting.pdb
+C:\Users\Joshua.knights\Work\Training\Training\Greeting\Greeting\obj\Debug\netcoreapp3.1\Greeting.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Joshua.knights\Work\Training\Training\Greeting\Greeting\obj\Debug\netcoreapp3.1\Greeting.AssemblyInfoInputs.cache
+C:\Users\Joshua.knights\Work\Training\Training\Greeting\Greeting\obj\Debug\netcoreapp3.1\Greeting.AssemblyInfo.cs
+C:\Users\Joshua.knights\Work\Training\Training\Greeting\Greeting\obj\Debug\netcoreapp3.1\Greeting.csproj.CoreCompileInputs.cache
+C:\Users\Joshua.knights\Work\Training\Training\Greeting\Greeting\obj\Debug\netcoreapp3.1\Greeting.dll
+C:\Users\Joshua.knights\Work\Training\Training\Greeting\Greeting\obj\Debug\netcoreapp3.1\Greeting.pdb
+C:\Users\Joshua.knights\Work\Training\Training\Greeting\Greeting\obj\Debug\netcoreapp3.1\Greeting.genruntimeconfig.cache
