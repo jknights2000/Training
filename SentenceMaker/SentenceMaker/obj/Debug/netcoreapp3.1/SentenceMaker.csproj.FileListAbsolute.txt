@@ -1,0 +1,13 @@
+C:\Users\Joshua.knights\Work\Training\Training\SentenceMaker\SentenceMaker\bin\Debug\netcoreapp3.1\SentenceMaker.exe
+C:\Users\Joshua.knights\Work\Training\Training\SentenceMaker\SentenceMaker\bin\Debug\netcoreapp3.1\SentenceMaker.deps.json
+C:\Users\Joshua.knights\Work\Training\Training\SentenceMaker\SentenceMaker\bin\Debug\netcoreapp3.1\SentenceMaker.runtimeconfig.json
+C:\Users\Joshua.knights\Work\Training\Training\SentenceMaker\SentenceMaker\bin\Debug\netcoreapp3.1\SentenceMaker.runtimeconfig.dev.json
+C:\Users\Joshua.knights\Work\Training\Training\SentenceMaker\SentenceMaker\bin\Debug\netcoreapp3.1\SentenceMaker.dll
+C:\Users\Joshua.knights\Work\Training\Training\SentenceMaker\SentenceMaker\bin\Debug\netcoreapp3.1\SentenceMaker.pdb
+C:\Users\Joshua.knights\Work\Training\Training\SentenceMaker\SentenceMaker\obj\Debug\netcoreapp3.1\SentenceMaker.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Joshua.knights\Work\Training\Training\SentenceMaker\SentenceMaker\obj\Debug\netcoreapp3.1\SentenceMaker.AssemblyInfoInputs.cache
+C:\Users\Joshua.knights\Work\Training\Training\SentenceMaker\SentenceMaker\obj\Debug\netcoreapp3.1\SentenceMaker.AssemblyInfo.cs
+C:\Users\Joshua.knights\Work\Training\Training\SentenceMaker\SentenceMaker\obj\Debug\netcoreapp3.1\SentenceMaker.csproj.CoreCompileInputs.cache
+C:\Users\Joshua.knights\Work\Training\Training\SentenceMaker\SentenceMaker\obj\Debug\netcoreapp3.1\SentenceMaker.dll
+C:\Users\Joshua.knights\Work\Training\Training\SentenceMaker\SentenceMaker\obj\Debug\netcoreapp3.1\SentenceMaker.pdb
+C:\Users\Joshua.knights\Work\Training\Training\SentenceMaker\SentenceMaker\obj\Debug\netcoreapp3.1\SentenceMaker.genruntimeconfig.cache
