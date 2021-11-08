@@ -7,6 +7,8 @@ namespace Helloworld
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
+            string afreind = Console.ReadLine();
+            Console.WriteLine(afreind);
         }
     }
 }
