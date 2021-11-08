@@ -11,3 +11,4 @@ C:\Users\Joshua.knights\Work\Training\Training\Greeting\Greeting\obj\Debug\netco
 C:\Users\Joshua.knights\Work\Training\Training\Greeting\Greeting\obj\Debug\netcoreapp3.1\Greeting.dll
 C:\Users\Joshua.knights\Work\Training\Training\Greeting\Greeting\obj\Debug\netcoreapp3.1\Greeting.pdb
 C:\Users\Joshua.knights\Work\Training\Training\Greeting\Greeting\obj\Debug\netcoreapp3.1\Greeting.genruntimeconfig.cache
+C:\Users\Joshua.knights\Work\Training\Training\Greeting\Greeting\obj\Debug\netcoreapp3.1\Greeting.csproj.AssemblyReference.cache
