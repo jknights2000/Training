@@ -6,41 +6,43 @@ namespace Greeting
     {
         static void Main(string[] args)
         {
+            Person p = new Person();
             Console.WriteLine("Whats your First name");
-            string afirstname = Console.ReadLine();
+            p.FirstName = Console.ReadLine();
+
             Console.WriteLine("Whats your Second name");
-            string asecondname = Console.ReadLine();
+            p.SecondName = Console.ReadLine();
+            p.Birthday = p.getBirth();
+            p.yearsold = p.getAge();
+            
 
-            bool isvaliddate = false;
-            DateTime birthday = new DateTime();
-            while (!isvaliddate)
-            {
-                Console.WriteLine("Whats your birthday");
-                string date = Console.ReadLine();
-                isvaliddate = DateTime.TryParse(date, out birthday);
-                if(!isvaliddate)
-                {
-                    Console.WriteLine("{0} is not a valid date",date);
-                }
-             }
-            int yearsold = DateTime.Today.Year - birthday.Year;
 
-            if (afirstname != "" && asecondname != "")
+
+            //use @ for special characters
+            //{1} as placement followed by ,
+            //string.format
+            //:C currecny :N adds commas to numbers :P percentage
+            //use hashes to be replace by numbers
+        }
+
+        public void Response(Person person)
+        {
+            if (person.FirstName != "" && person.SecondName != "")
             {
-                Console.WriteLine("Hello " + afirstname +" "+ asecondname + ". nice to meet you");
-                if(CheckUpper(afirstname) && CheckUpper(asecondname))
+                Console.WriteLine("Hello " + person.FirstName + " " + person.SecondName + ". nice to meet you");
+                if (CheckUpper(afirstname) && CheckUpper(person.SecondName))
                 {
                     Console.WriteLine("Bit loud tho");
                 }
-                if(afirstname.Length + asecondname.Length > 12)
+                if (afirstname.Length + person.SecondName.Length > 12)
                 {
                     Console.WriteLine("ooooo. long name");
                 }
                 howold(yearsold);
             }
-            else if (asecondname == "" && afirstname != "")
+            else if (person.SecondName == "" && afirstname != "")
             {
-                Console.WriteLine("Hello " + afirstname +  ". nice to meet you. one name i see");
+                Console.WriteLine("Hello " + afirstname + ". nice to meet you. one name i see");
                 if (CheckUpper(afirstname))
                 {
                     Console.WriteLine("Bit loud tho");
@@ -66,29 +68,54 @@ namespace Greeting
             {
                 Console.WriteLine("Hello. anyone there");
             }
-
-            //use @ for special characters
-            //{1} as placement followed by ,
-            //string.format
-            //:C currecny :N adds commas to numbers :P percentage
-            //use hashes to be replace by numbers
         }
 
         private static void howold(int age)
         {
-            if(age < 10)
+            if (age < 10)
             {
                 Console.WriteLine("hey there little guy");
             }
         }
 
-        public static bool CheckUpper(string input)
+
+    }
+    class Person
+    {
+        public string FirstName { get; set; }
+        public string SecondName { get; set; }
+
+        public DateTime Birthday { get; set; }
+        public int yearsold { get; set; }
+        public  bool CheckUpper(string input)
         {
-            if(input.ToUpper() == input)
+            if (input.ToUpper() == input)
             {
                 return true;
             }
             return false;
         }
+        public DateTime getBirth()
+        {
+            bool isvaliddate = false;
+            DateTime birthday = new DateTime();
+            while (!isvaliddate)
+            {
+                Console.WriteLine("Whats your birthday");
+                string date = Console.ReadLine();
+                isvaliddate = DateTime.TryParse(date, out birthday);
+                if (!isvaliddate)
+                {
+                    Console.WriteLine("{0} is not a valid date", date);
+                }
+            }
+            return birthday;
+        }
+        public int getAge()
+        {
+            int yearsold = DateTime.Today.Year - Birthday.Year;
+            return yearsold;
+        }
+
     }
 }
