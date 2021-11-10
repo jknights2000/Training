@@ -4,18 +4,11 @@ namespace Greeting
 {
     class Program
     {
+        
         static void Main(string[] args)
         {
-            Person p = new Person();
-            Console.WriteLine("Whats your First name");
-            p.FirstName = Console.ReadLine();
-
-            Console.WriteLine("Whats your Second name");
-            p.SecondName = Console.ReadLine();
-            p.Birthday = p.getBirth();
-            p.yearsold = p.getAge();
-            
-
+            Program pro = new Program();
+            pro.run();
 
 
             //use @ for special characters
@@ -24,42 +17,66 @@ namespace Greeting
             //:C currecny :N adds commas to numbers :P percentage
             //use hashes to be replace by numbers
         }
+        public void run()
+        {
+            Person p = new Person();
+            Console.WriteLine("Whats your First name");
+            p.FirstName = Console.ReadLine();
 
+            Console.WriteLine("Whats your Second name");
+            p.SecondName = Console.ReadLine();
+            p.Birthday = p.getBirth();
+
+            Response(p);
+        }
         public void Response(Person person)
         {
+
+            string fullName = (person.FirstName + " " + person.SecondName).Trim();
+            if (fullName.Length == 0)
+            {
+                Console.WriteLine("Hello. anyone there?");
+                return; // abort
+
+            }
+            Console.WriteLine($"Hello {fullName}, nice to meet you.{((person.IsBlank(person.FirstName) || person.IsBlank(person.SecondName)) ? " One name I see!" : "")}");
+            CheckAge(person.age);
+            CheckUpper(fullName);
+            CheckLength(fullName);
+            /*
             if (person.FirstName != "" && person.SecondName != "")
             {
                 Console.WriteLine("Hello " + person.FirstName + " " + person.SecondName + ". nice to meet you");
-                if (CheckUpper(afirstname) && CheckUpper(person.SecondName))
+                if (CheckUpper(person.FirstName) && CheckUpper(person.SecondName))
                 {
                     Console.WriteLine("Bit loud tho");
                 }
-                if (afirstname.Length + person.SecondName.Length > 12)
+                if (person.FirstName.Length + person.SecondName.Length > 12)
                 {
                     Console.WriteLine("ooooo. long name");
                 }
-                howold(yearsold);
+                howold(person.age);
             }
-            else if (person.SecondName == "" && afirstname != "")
+            else if (person.SecondName == "" && person.FirstName != "")
             {
-                Console.WriteLine("Hello " + afirstname + ". nice to meet you. one name i see");
-                if (CheckUpper(afirstname))
+                Console.WriteLine("Hello " + person.FirstName + ". nice to meet you. one name i see");
+                if (CheckUpper(person.FirstName))
                 {
                     Console.WriteLine("Bit loud tho");
                 }
-                if (afirstname.Length > 12)
+                if (person.FirstName.Length > 12)
                 {
                     Console.WriteLine("ooooo. long name");
                 }
             }
-            else if (afirstname == "" && asecondname != "")
+            else if (person.FirstName == "" && person.SecondName != "")
             {
-                Console.WriteLine("Hello " + asecondname + ". nice to meet you. one name i see");
-                if (CheckUpper(asecondname))
+                Console.WriteLine("Hello " + person.SecondName + ". nice to meet you. one name i see");
+                if (CheckUpper(person.SecondName))
                 {
                     Console.WriteLine("Bit loud tho");
                 }
-                if (asecondname.Length > 12)
+                if (person.SecondName.Length > 12)
                 {
                     Console.WriteLine("ooooo. long name");
                 }
@@ -68,54 +85,31 @@ namespace Greeting
             {
                 Console.WriteLine("Hello. anyone there");
             }
+            */
         }
 
-        private static void howold(int age)
+        private static void CheckAge(int age)
         {
             if (age < 10)
             {
                 Console.WriteLine("hey there little guy");
             }
         }
-
-
-    }
-    class Person
-    {
-        public string FirstName { get; set; }
-        public string SecondName { get; set; }
-
-        public DateTime Birthday { get; set; }
-        public int yearsold { get; set; }
-        public  bool CheckUpper(string input)
+        public void CheckUpper(string input)
         {
             if (input.ToUpper() == input)
             {
-                return true;
+                Console.WriteLine("Bit loud tho");
             }
-            return false;
         }
-        public DateTime getBirth()
+        public void CheckLength(string input)
         {
-            bool isvaliddate = false;
-            DateTime birthday = new DateTime();
-            while (!isvaliddate)
+            if (input.Length > 12)
             {
-                Console.WriteLine("Whats your birthday");
-                string date = Console.ReadLine();
-                isvaliddate = DateTime.TryParse(date, out birthday);
-                if (!isvaliddate)
-                {
-                    Console.WriteLine("{0} is not a valid date", date);
-                }
+                Console.WriteLine("ooooo. long name");
             }
-            return birthday;
-        }
-        public int getAge()
-        {
-            int yearsold = DateTime.Today.Year - Birthday.Year;
-            return yearsold;
         }
 
     }
+   
 }
