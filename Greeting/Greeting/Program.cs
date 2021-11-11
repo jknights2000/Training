@@ -43,49 +43,7 @@ namespace Greeting
             CheckAge(person.age);
             CheckUpper(fullName);
             CheckLength(fullName);
-            /*
-            if (person.FirstName != "" && person.SecondName != "")
-            {
-                Console.WriteLine("Hello " + person.FirstName + " " + person.SecondName + ". nice to meet you");
-                if (CheckUpper(person.FirstName) && CheckUpper(person.SecondName))
-                {
-                    Console.WriteLine("Bit loud tho");
-                }
-                if (person.FirstName.Length + person.SecondName.Length > 12)
-                {
-                    Console.WriteLine("ooooo. long name");
-                }
-                howold(person.age);
-            }
-            else if (person.SecondName == "" && person.FirstName != "")
-            {
-                Console.WriteLine("Hello " + person.FirstName + ". nice to meet you. one name i see");
-                if (CheckUpper(person.FirstName))
-                {
-                    Console.WriteLine("Bit loud tho");
-                }
-                if (person.FirstName.Length > 12)
-                {
-                    Console.WriteLine("ooooo. long name");
-                }
-            }
-            else if (person.FirstName == "" && person.SecondName != "")
-            {
-                Console.WriteLine("Hello " + person.SecondName + ". nice to meet you. one name i see");
-                if (CheckUpper(person.SecondName))
-                {
-                    Console.WriteLine("Bit loud tho");
-                }
-                if (person.SecondName.Length > 12)
-                {
-                    Console.WriteLine("ooooo. long name");
-                }
-            }
-            else
-            {
-                Console.WriteLine("Hello. anyone there");
-            }
-            */
+           
         }
 
         private static void CheckAge(int age)
