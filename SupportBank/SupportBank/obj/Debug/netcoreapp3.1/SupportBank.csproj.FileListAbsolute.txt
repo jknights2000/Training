@@ -1,0 +1,14 @@
+C:\Users\Joshua.knights\Work\Training\Training\SupportBank\SupportBank\bin\Debug\netcoreapp3.1\SupportBank.exe
+C:\Users\Joshua.knights\Work\Training\Training\SupportBank\SupportBank\bin\Debug\netcoreapp3.1\SupportBank.deps.json
+C:\Users\Joshua.knights\Work\Training\Training\SupportBank\SupportBank\bin\Debug\netcoreapp3.1\SupportBank.runtimeconfig.json
+C:\Users\Joshua.knights\Work\Training\Training\SupportBank\SupportBank\bin\Debug\netcoreapp3.1\SupportBank.runtimeconfig.dev.json
+C:\Users\Joshua.knights\Work\Training\Training\SupportBank\SupportBank\bin\Debug\netcoreapp3.1\SupportBank.dll
+C:\Users\Joshua.knights\Work\Training\Training\SupportBank\SupportBank\bin\Debug\netcoreapp3.1\SupportBank.pdb
+C:\Users\Joshua.knights\Work\Training\Training\SupportBank\SupportBank\obj\Debug\netcoreapp3.1\SupportBank.csproj.AssemblyReference.cache
+C:\Users\Joshua.knights\Work\Training\Training\SupportBank\SupportBank\obj\Debug\netcoreapp3.1\SupportBank.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Joshua.knights\Work\Training\Training\SupportBank\SupportBank\obj\Debug\netcoreapp3.1\SupportBank.AssemblyInfoInputs.cache
+C:\Users\Joshua.knights\Work\Training\Training\SupportBank\SupportBank\obj\Debug\netcoreapp3.1\SupportBank.AssemblyInfo.cs
+C:\Users\Joshua.knights\Work\Training\Training\SupportBank\SupportBank\obj\Debug\netcoreapp3.1\SupportBank.csproj.CoreCompileInputs.cache
+C:\Users\Joshua.knights\Work\Training\Training\SupportBank\SupportBank\obj\Debug\netcoreapp3.1\SupportBank.dll
+C:\Users\Joshua.knights\Work\Training\Training\SupportBank\SupportBank\obj\Debug\netcoreapp3.1\SupportBank.pdb
+C:\Users\Joshua.knights\Work\Training\Training\SupportBank\SupportBank\obj\Debug\netcoreapp3.1\SupportBank.genruntimeconfig.cache

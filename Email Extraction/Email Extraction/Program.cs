@@ -35,6 +35,7 @@ namespace Email_Extraction
                 Console.WriteLine(number + " is not a valid UK number");
             }
         }
+
         public static void Name(string text)
         {
             Regex name = new Regex(@"(\w+)\s+(\w+)\s+(\w+)");
@@ -45,6 +46,7 @@ namespace Email_Extraction
                 Console.WriteLine("Second Name: " + match.Groups[3]);
             }
         }
+
         public static void Naive(string text)
         {
             int counter = 0;
@@ -60,9 +62,10 @@ namespace Email_Extraction
             }
             Console.WriteLine("Amount of @softwire.com Using Naive: " + counter);
         }
+
         public static void Regexmethod(string text)
         {
-            Regex email = new Regex(@"[A-Za-z0-9-+.%_]+@softwire.com\s");
+            Regex email = new Regex(@"[A-Za-z0-9-+.%_]+@softwire.com\b");
            int count = email.Matches(text).Count;
             Console.WriteLine("Amount of @softwire.com Using Regex: " + count);
         }
@@ -73,34 +76,14 @@ namespace Email_Extraction
             Regex email = new Regex(@"\w+([-+.%]\w+)*@(\w+)([-.]\w+)*\.\w+([-.]\w+)*");
             foreach (Match match in email.Matches(text))
             {
-                /*
-                string emailmatch = match.Value;
-                string emailend = emailmatch.Substring(emailmatch.LastIndexOf('@') + 1);
-                
-                int thefirst = emailend.IndexOf(".");
-                emailend = emailend.Substring(0, thefirst);
-
-                emailenddic.TryGetValue(emailend, out int currentnumber);
-                emailenddic[emailend] = currentnumber + 1;
-                */
                 emailenddic.TryGetValue(match.Groups[2].ToString(), out int currentnumber);
                 emailenddic[match.Groups[2].ToString()] = currentnumber + 1;
             }
-
-
             //only .com and co.uk
             Dictionary<string, int> emailenddicspec = new Dictionary<string, int>();
             Regex emailcom = new Regex(@"\w+([-+.%]\w+)*@(\w+)([-.]\w+)*(.com|.co.uk)");
             foreach (Match match in emailcom.Matches(text))
             {
-                //string emailmatch = match.Value;
-                /*
-                string emailend = emailmatch.Substring(emailmatch.LastIndexOf('@') + 1);
-                //only domains of vaild emails
-
-                int thefirst = emailend.IndexOf(".");
-                emailend = emailend.Substring(0, thefirst);
-                */
                 emailenddicspec.TryGetValue(match.Groups[2].ToString(), out int currentnumber);
                 emailenddicspec[match.Groups[2].ToString()] = currentnumber +1;
            
