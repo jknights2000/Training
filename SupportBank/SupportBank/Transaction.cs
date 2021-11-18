@@ -2,14 +2,19 @@
 using System.Collections.Generic;
 using System.Text;
 
+using System.Xml.Serialization;
 namespace SupportBank
 {
-    using System.Xml.Serialization;
+    
+    [XmlType("SupportTransaction")]
     public class Transaction
     {
-        [XmlElement("SupportTransaction")]
+        [XmlAttribute("Date")]
         public string Date { get; set; }
         
+        [XmlElement("Parties")]
+        public Pearent p { get; set; }
+
         [XmlElement("From")]
         public string FromAccount { get; set; }
         [XmlElement("To")]
@@ -35,4 +40,5 @@ namespace SupportBank
             this.Amount = amount;
         }
     }
+
 }

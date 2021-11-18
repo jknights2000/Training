@@ -1391,3 +1391,606 @@
 2021-11-18 14:56:30.4157 Info - SupportBank.Program: Listed all data
 2021-11-18 14:56:43.8891 Info - SupportBank.Program: User listed all transactions for account named list Jon A
 2021-11-18 14:56:43.8891 Info - SupportBank.Program: Listed data for Jon A
+2021-11-18 17:01:44.7125 Info - SupportBank.Program: New Account for name Gergana I has been made
+2021-11-18 17:01:44.7400 Info - SupportBank.Program: New Account for name Jon A has been made
+2021-11-18 17:01:44.7412 Info - SupportBank.Program: New Account for name Sam N has been made
+2021-11-18 17:01:44.7412 Info - SupportBank.Program: New Account for name Dan W has been made
+2021-11-18 17:01:44.7412 Info - SupportBank.Program: New Account for name Stephen S has been made
+2021-11-18 17:01:44.7412 Info - SupportBank.Program: New Account for name Sarah T has been made
+2021-11-18 17:01:44.7412 Info - SupportBank.Program: New Account for name Rob S has been made
+2021-11-18 17:01:44.7412 Info - SupportBank.Program: update list of transactions and amount for account with the name Sarah T
+2021-11-18 17:01:44.7412 Info - SupportBank.Program: New Account for name Tim L has been made
+2021-11-18 17:01:44.7412 Info - SupportBank.Program: New Account for name Chris W has been made
+2021-11-18 17:01:44.7412 Info - SupportBank.Program: update list of transactions and amount for account with the name Tim L
+2021-11-18 17:01:44.7412 Info - SupportBank.Program: update list of transactions and amount for account with the name Rob S
+2021-11-18 17:01:44.7412 Info - SupportBank.Program: update list of transactions and amount for account with the name Sarah T
+2021-11-18 17:01:44.7412 Info - SupportBank.Program: update list of transactions and amount for account with the name Sam N
+2021-11-18 17:01:44.7412 Info - SupportBank.Program: update list of transactions and amount for account with the name Dan W
+2021-11-18 17:01:44.7412 Info - SupportBank.Program: New Account for name Todd has been made
+2021-11-18 17:01:44.7412 Info - SupportBank.Program: update list of transactions and amount for account with the name Chris W
+2021-11-18 17:01:44.7412 Info - SupportBank.Program: New Account for name Ben B has been made
+2021-11-18 17:01:44.7412 Info - SupportBank.Program: update list of transactions and amount for account with the name Chris W
+2021-11-18 17:01:44.7412 Info - SupportBank.Program: update list of transactions and amount for account with the name Tim L
+2021-11-18 17:01:44.7412 Info - SupportBank.Program: update list of transactions and amount for account with the name Rob S
+2021-11-18 17:01:44.7412 Info - SupportBank.Program: update list of transactions and amount for account with the name Tim L
+2021-11-18 17:01:44.7412 Info - SupportBank.Program: update list of transactions and amount for account with the name Chris W
+2021-11-18 17:01:44.7412 Info - SupportBank.Program: update list of transactions and amount for account with the name Rob S
+2021-11-18 17:01:44.7412 Info - SupportBank.Program: update list of transactions and amount for account with the name Stephen S
+2021-11-18 17:01:44.7412 Info - SupportBank.Program: update list of transactions and amount for account with the name Gergana I
+2021-11-18 17:01:44.7412 Info - SupportBank.Program: update list of transactions and amount for account with the name Stephen S
+2021-11-18 17:01:44.7412 Info - SupportBank.Program: update list of transactions and amount for account with the name Todd
+2021-11-18 17:01:44.7412 Info - SupportBank.Program: update list of transactions and amount for account with the name Stephen S
+2021-11-18 17:01:44.7412 Info - SupportBank.Program: New Account for name Laura B has been made
+2021-11-18 17:01:44.7412 Info - SupportBank.Program: update list of transactions and amount for account with the name Sam N
+2021-11-18 17:01:44.7412 Info - SupportBank.Program: update list of transactions and amount for account with the name Rob S
+2021-11-18 17:01:44.7412 Info - SupportBank.Program: update list of transactions and amount for account with the name Ben B
+2021-11-18 17:01:44.7412 Info - SupportBank.Program: update list of transactions and amount for account with the name Chris W
+2021-11-18 17:01:44.7412 Info - SupportBank.Program: update list of transactions and amount for account with the name Rob S
+2021-11-18 17:01:44.7412 Info - SupportBank.Program: update list of transactions and amount for account with the name Jon A
+2021-11-18 17:01:44.7412 Info - SupportBank.Program: update list of transactions and amount for account with the name Todd
+2021-11-18 17:01:44.7515 Info - SupportBank.Program: update list of transactions and amount for account with the name Ben B
+2021-11-18 17:01:44.7515 Info - SupportBank.Program: update list of transactions and amount for account with the name Laura B
+2021-11-18 17:01:44.7515 Info - SupportBank.Program: update list of transactions and amount for account with the name Todd
+2021-11-18 17:01:44.7515 Info - SupportBank.Program: update list of transactions and amount for account with the name Chris W
+2021-11-18 17:01:44.7515 Info - SupportBank.Program: update list of transactions and amount for account with the name Stephen S
+2021-11-18 17:01:44.7515 Info - SupportBank.Program: update list of transactions and amount for account with the name Sam N
+2021-11-18 17:01:44.7515 Info - SupportBank.Program: update list of transactions and amount for account with the name Dan W
+2021-11-18 17:01:44.7515 Info - SupportBank.Program: update list of transactions and amount for account with the name Gergana I
+2021-11-18 17:01:44.7515 Info - SupportBank.Program: update list of transactions and amount for account with the name Rob S
+2021-11-18 17:01:44.7515 Info - SupportBank.Program: update list of transactions and amount for account with the name Dan W
+2021-11-18 17:01:44.7515 Info - SupportBank.Program: update list of transactions and amount for account with the name Tim L
+2021-11-18 17:01:44.7515 Info - SupportBank.Program: update list of transactions and amount for account with the name Tim L
+2021-11-18 17:01:44.7515 Info - SupportBank.Program: update list of transactions and amount for account with the name Ben B
+2021-11-18 17:01:44.7515 Info - SupportBank.Program: update list of transactions and amount for account with the name Rob S
+2021-11-18 17:01:44.7515 Info - SupportBank.Program: update list of transactions and amount for account with the name Ben B
+2021-11-18 17:01:44.7515 Info - SupportBank.Program: update list of transactions and amount for account with the name Stephen S
+2021-11-18 17:01:44.7515 Info - SupportBank.Program: update list of transactions and amount for account with the name Gergana I
+2021-11-18 17:01:44.7515 Info - SupportBank.Program: update list of transactions and amount for account with the name Gergana I
+2021-11-18 17:01:44.7515 Info - SupportBank.Program: update list of transactions and amount for account with the name Chris W
+2021-11-18 17:01:44.7515 Info - SupportBank.Program: update list of transactions and amount for account with the name Gergana I
+2021-11-18 17:01:44.7515 Info - SupportBank.Program: update list of transactions and amount for account with the name Rob S
+2021-11-18 17:01:44.7515 Info - SupportBank.Program: update list of transactions and amount for account with the name Dan W
+2021-11-18 17:01:44.7515 Info - SupportBank.Program: update list of transactions and amount for account with the name Stephen S
+2021-11-18 17:01:44.7515 Info - SupportBank.Program: update list of transactions and amount for account with the name Jon A
+2021-11-18 17:01:44.7515 Info - SupportBank.Program: update list of transactions and amount for account with the name Sarah T
+2021-11-18 17:01:44.7515 Info - SupportBank.Program: update list of transactions and amount for account with the name Stephen S
+2021-11-18 17:01:44.7515 Info - SupportBank.Program: update list of transactions and amount for account with the name Dan W
+2021-11-18 17:01:44.7515 Info - SupportBank.Program: update list of transactions and amount for account with the name Stephen S
+2021-11-18 17:01:44.7515 Info - SupportBank.Program: update list of transactions and amount for account with the name Tim L
+2021-11-18 17:01:44.7515 Info - SupportBank.Program: update list of transactions and amount for account with the name Gergana I
+2021-11-18 17:01:44.7515 Info - SupportBank.Program: update list of transactions and amount for account with the name Laura B
+2021-11-18 17:01:44.7515 Info - SupportBank.Program: update list of transactions and amount for account with the name Sarah T
+2021-11-18 17:01:44.7515 Info - SupportBank.Program: update list of transactions and amount for account with the name Gergana I
+2021-11-18 17:01:44.7515 Info - SupportBank.Program: update list of transactions and amount for account with the name Laura B
+2021-11-18 17:01:44.7515 Info - SupportBank.Program: update list of transactions and amount for account with the name Dan W
+2021-11-18 17:01:44.7515 Info - SupportBank.Program: update list of transactions and amount for account with the name Dan W
+2021-11-18 17:01:44.7515 Info - SupportBank.Program: update list of transactions and amount for account with the name Chris W
+2021-11-18 17:01:44.7515 Info - SupportBank.Program: update list of transactions and amount for account with the name Dan W
+2021-11-18 17:01:44.7515 Info - SupportBank.Program: update list of transactions and amount for account with the name Todd
+2021-11-18 17:01:44.7515 Info - SupportBank.Program: update list of transactions and amount for account with the name Sam N
+2021-11-18 17:01:44.7515 Info - SupportBank.Program: update list of transactions and amount for account with the name Chris W
+2021-11-18 17:01:44.7515 Info - SupportBank.Program: update list of transactions and amount for account with the name Tim L
+2021-11-18 17:01:44.7515 Info - SupportBank.Program: update list of transactions and amount for account with the name Chris W
+2021-11-18 17:01:44.7515 Info - SupportBank.Program: update list of transactions and amount for account with the name Sarah T
+2021-11-18 17:01:44.7515 Info - SupportBank.Program: update list of transactions and amount for account with the name Dan W
+2021-11-18 17:01:44.7515 Info - SupportBank.Program: update list of transactions and amount for account with the name Gergana I
+2021-11-18 17:01:44.7515 Info - SupportBank.Program: update list of transactions and amount for account with the name Jon A
+2021-11-18 17:01:44.7515 Info - SupportBank.Program: update list of transactions and amount for account with the name Sam N
+2021-11-18 17:01:44.7515 Info - SupportBank.Program: update list of transactions and amount for account with the name Todd
+2021-11-18 17:01:44.7666 Info - SupportBank.Program: update list of transactions and amount for account with the name Laura B
+2021-11-18 17:01:44.7666 Info - SupportBank.Program: update list of transactions and amount for account with the name Dan W
+2021-11-18 17:01:44.7666 Info - SupportBank.Program: update list of transactions and amount for account with the name Laura B
+2021-11-18 17:01:44.7666 Info - SupportBank.Program: update list of transactions and amount for account with the name Rob S
+2021-11-18 17:01:44.7666 Info - SupportBank.Program: update list of transactions and amount for account with the name Stephen S
+2021-11-18 17:01:44.7666 Info - SupportBank.Program: update list of transactions and amount for account with the name Ben B
+2021-11-18 17:01:44.7666 Info - SupportBank.Program: update list of transactions and amount for account with the name Todd
+2021-11-18 17:01:44.7666 Info - SupportBank.Program: update list of transactions and amount for account with the name Dan W
+2021-11-18 17:01:44.7666 Info - SupportBank.Program: update list of transactions and amount for account with the name Laura B
+2021-11-18 17:01:44.7666 Info - SupportBank.Program: update list of transactions and amount for account with the name Sam N
+2021-11-18 17:01:44.7666 Info - SupportBank.Program: update list of transactions and amount for account with the name Laura B
+2021-11-18 17:01:44.7666 Info - SupportBank.Program: update list of transactions and amount for account with the name Ben B
+2021-11-18 17:01:44.7666 Info - SupportBank.Program: update list of transactions and amount for account with the name Jon A
+2021-11-18 17:01:44.7666 Info - SupportBank.Program: update list of transactions and amount for account with the name Tim L
+2021-11-18 17:01:44.7666 Info - SupportBank.Program: update list of transactions and amount for account with the name Sarah T
+2021-11-18 17:01:44.7666 Info - SupportBank.Program: update list of transactions and amount for account with the name Laura B
+2021-11-18 17:01:44.7666 Info - SupportBank.Program: update list of transactions and amount for account with the name Gergana I
+2021-11-18 17:01:44.7666 Info - SupportBank.Program: update list of transactions and amount for account with the name Ben B
+2021-11-18 17:01:44.7666 Info - SupportBank.Program: update list of transactions and amount for account with the name Todd
+2021-11-18 17:01:44.7666 Info - SupportBank.Program: update list of transactions and amount for account with the name Sam N
+2021-11-18 17:01:44.7666 Info - SupportBank.Program: update list of transactions and amount for account with the name Sam N
+2021-11-18 17:01:44.7666 Info - SupportBank.Program: update list of transactions and amount for account with the name Dan W
+2021-11-18 17:01:44.7666 Info - SupportBank.Program: update list of transactions and amount for account with the name Chris W
+2021-11-18 17:01:44.7666 Info - SupportBank.Program: update list of transactions and amount for account with the name Rob S
+2021-11-18 17:01:44.7666 Info - SupportBank.Program: update list of transactions and amount for account with the name Rob S
+2021-11-18 17:01:44.7666 Info - SupportBank.Program: update list of transactions and amount for account with the name Sam N
+2021-11-18 17:01:44.7666 Info - SupportBank.Program: update list of transactions and amount for account with the name Todd
+2021-11-18 17:01:44.7666 Info - SupportBank.Program: update list of transactions and amount for account with the name Chris W
+2021-11-18 17:01:44.7666 Info - SupportBank.Program: update list of transactions and amount for account with the name Sarah T
+2021-11-18 17:01:44.7666 Info - SupportBank.Program: update list of transactions and amount for account with the name Chris W
+2021-11-18 17:01:44.7666 Info - SupportBank.Program: update list of transactions and amount for account with the name Tim L
+2021-11-18 17:01:44.7666 Info - SupportBank.Program: update list of transactions and amount for account with the name Ben B
+2021-11-18 17:01:44.7666 Info - SupportBank.Program: update list of transactions and amount for account with the name Gergana I
+2021-11-18 17:01:44.7666 Info - SupportBank.Program: update list of transactions and amount for account with the name Tim L
+2021-11-18 17:01:44.7666 Info - SupportBank.Program: update list of transactions and amount for account with the name Chris W
+2021-11-18 17:01:44.7666 Info - SupportBank.Program: update list of transactions and amount for account with the name Jon A
+2021-11-18 17:01:44.7666 Info - SupportBank.Program: update list of transactions and amount for account with the name Laura B
+2021-11-18 17:01:44.7828 Info - SupportBank.Program: update list of transactions and amount for account with the name Jon A
+2021-11-18 17:01:44.7828 Info - SupportBank.Program: update list of transactions and amount for account with the name Sarah T
+2021-11-18 17:01:44.7828 Info - SupportBank.Program: update list of transactions and amount for account with the name Dan W
+2021-11-18 17:01:44.7828 Info - SupportBank.Program: update list of transactions and amount for account with the name Dan W
+2021-11-18 17:01:44.7828 Info - SupportBank.Program: update list of transactions and amount for account with the name Stephen S
+2021-11-18 17:01:44.7828 Info - SupportBank.Program: update list of transactions and amount for account with the name Sarah T
+2021-11-18 17:01:44.7828 Info - SupportBank.Program: update list of transactions and amount for account with the name Chris W
+2021-11-18 17:01:44.7828 Info - SupportBank.Program: update list of transactions and amount for account with the name Todd
+2021-11-18 17:01:44.7828 Info - SupportBank.Program: update list of transactions and amount for account with the name Stephen S
+2021-11-18 17:01:44.7828 Info - SupportBank.Program: update list of transactions and amount for account with the name Laura B
+2021-11-18 17:01:44.7828 Info - SupportBank.Program: update list of transactions and amount for account with the name Chris W
+2021-11-18 17:01:44.7828 Info - SupportBank.Program: update list of transactions and amount for account with the name Ben B
+2021-11-18 17:01:44.7828 Info - SupportBank.Program: update list of transactions and amount for account with the name Chris W
+2021-11-18 17:01:44.7828 Info - SupportBank.Program: update list of transactions and amount for account with the name Laura B
+2021-11-18 17:01:44.7828 Info - SupportBank.Program: update list of transactions and amount for account with the name Sam N
+2021-11-18 17:01:44.7828 Info - SupportBank.Program: update list of transactions and amount for account with the name Stephen S
+2021-11-18 17:01:44.7828 Info - SupportBank.Program: update list of transactions and amount for account with the name Todd
+2021-11-18 17:01:44.7828 Info - SupportBank.Program: update list of transactions and amount for account with the name Dan W
+2021-11-18 17:01:44.7828 Info - SupportBank.Program: update list of transactions and amount for account with the name Jon A
+2021-11-18 17:01:44.7828 Info - SupportBank.Program: update list of transactions and amount for account with the name Chris W
+2021-11-18 17:01:44.7828 Info - SupportBank.Program: update list of transactions and amount for account with the name Stephen S
+2021-11-18 17:01:44.7828 Info - SupportBank.Program: update list of transactions and amount for account with the name Laura B
+2021-11-18 17:01:44.7828 Info - SupportBank.Program: update list of transactions and amount for account with the name Jon A
+2021-11-18 17:01:44.7828 Info - SupportBank.Program: update list of transactions and amount for account with the name Stephen S
+2021-11-18 17:01:44.7828 Info - SupportBank.Program: update list of transactions and amount for account with the name Tim L
+2021-11-18 17:01:44.7828 Info - SupportBank.Program: update list of transactions and amount for account with the name Jon A
+2021-11-18 17:01:44.7828 Info - SupportBank.Program: update list of transactions and amount for account with the name Dan W
+2021-11-18 17:01:44.7828 Info - SupportBank.Program: update list of transactions and amount for account with the name Sarah T
+2021-11-18 17:01:44.7828 Info - SupportBank.Program: update list of transactions and amount for account with the name Ben B
+2021-11-18 17:01:44.7828 Info - SupportBank.Program: update list of transactions and amount for account with the name Laura B
+2021-11-18 17:01:44.7828 Info - SupportBank.Program: update list of transactions and amount for account with the name Rob S
+2021-11-18 17:01:44.7828 Info - SupportBank.Program: update list of transactions and amount for account with the name Tim L
+2021-11-18 17:01:44.7828 Info - SupportBank.Program: update list of transactions and amount for account with the name Ben B
+2021-11-18 17:01:44.7828 Info - SupportBank.Program: update list of transactions and amount for account with the name Jon A
+2021-11-18 17:01:44.7828 Info - SupportBank.Program: update list of transactions and amount for account with the name Laura B
+2021-11-18 17:01:44.7978 Info - SupportBank.Program: update list of transactions and amount for account with the name Tim L
+2021-11-18 17:01:44.7978 Info - SupportBank.Program: update list of transactions and amount for account with the name Todd
+2021-11-18 17:01:44.7978 Info - SupportBank.Program: update list of transactions and amount for account with the name Ben B
+2021-11-18 17:01:44.7978 Info - SupportBank.Program: update list of transactions and amount for account with the name Chris W
+2021-11-18 17:01:44.7978 Info - SupportBank.Program: update list of transactions and amount for account with the name Stephen S
+2021-11-18 17:01:44.7978 Info - SupportBank.Program: update list of transactions and amount for account with the name Jon A
+2021-11-18 17:01:44.7978 Info - SupportBank.Program: update list of transactions and amount for account with the name Jon A
+2021-11-18 17:01:44.7978 Info - SupportBank.Program: update list of transactions and amount for account with the name Rob S
+2021-11-18 17:01:44.7978 Info - SupportBank.Program: update list of transactions and amount for account with the name Jon A
+2021-11-18 17:01:44.7978 Info - SupportBank.Program: update list of transactions and amount for account with the name Sam N
+2021-11-18 17:01:44.7978 Info - SupportBank.Program: update list of transactions and amount for account with the name Rob S
+2021-11-18 17:01:44.7978 Info - SupportBank.Program: update list of transactions and amount for account with the name Todd
+2021-11-18 17:01:44.7978 Info - SupportBank.Program: update list of transactions and amount for account with the name Todd
+2021-11-18 17:01:44.7978 Info - SupportBank.Program: update list of transactions and amount for account with the name Dan W
+2021-11-18 17:01:44.7978 Info - SupportBank.Program: update list of transactions and amount for account with the name Jon A
+2021-11-18 17:01:44.7978 Info - SupportBank.Program: update list of transactions and amount for account with the name Chris W
+2021-11-18 17:01:44.7978 Info - SupportBank.Program: update list of transactions and amount for account with the name Rob S
+2021-11-18 17:01:44.7978 Info - SupportBank.Program: update list of transactions and amount for account with the name Sam N
+2021-11-18 17:01:44.7978 Info - SupportBank.Program: update list of transactions and amount for account with the name Stephen S
+2021-11-18 17:01:44.7978 Info - SupportBank.Program: update list of transactions and amount for account with the name Sam N
+2021-11-18 17:01:44.7978 Info - SupportBank.Program: update list of transactions and amount for account with the name Tim L
+2021-11-18 17:01:44.7978 Info - SupportBank.Program: update list of transactions and amount for account with the name Sam N
+2021-11-18 17:01:44.7978 Info - SupportBank.Program: update list of transactions and amount for account with the name Laura B
+2021-11-18 17:01:44.7978 Info - SupportBank.Program: update list of transactions and amount for account with the name Dan W
+2021-11-18 17:01:44.7978 Info - SupportBank.Program: update list of transactions and amount for account with the name Chris W
+2021-11-18 17:01:44.7978 Info - SupportBank.Program: update list of transactions and amount for account with the name Laura B
+2021-11-18 17:01:44.7978 Info - SupportBank.Program: update list of transactions and amount for account with the name Chris W
+2021-11-18 17:01:44.7978 Info - SupportBank.Program: update list of transactions and amount for account with the name Dan W
+2021-11-18 17:01:44.7978 Info - SupportBank.Program: update list of transactions and amount for account with the name Chris W
+2021-11-18 17:01:44.7978 Info - SupportBank.Program: update list of transactions and amount for account with the name Todd
+2021-11-18 17:01:44.7978 Info - SupportBank.Program: update list of transactions and amount for account with the name Todd
+2021-11-18 17:01:44.7978 Info - SupportBank.Program: update list of transactions and amount for account with the name Tim L
+2021-11-18 17:01:44.7978 Info - SupportBank.Program: update list of transactions and amount for account with the name Sarah T
+2021-11-18 17:01:44.7978 Info - SupportBank.Program: update list of transactions and amount for account with the name Stephen S
+2021-11-18 17:01:44.7978 Info - SupportBank.Program: update list of transactions and amount for account with the name Laura B
+2021-11-18 17:01:44.7978 Info - SupportBank.Program: update list of transactions and amount for account with the name Stephen S
+2021-11-18 17:01:44.7978 Info - SupportBank.Program: update list of transactions and amount for account with the name Dan W
+2021-11-18 17:01:44.7978 Info - SupportBank.Program: update list of transactions and amount for account with the name Gergana I
+2021-11-18 17:01:44.7978 Info - SupportBank.Program: update list of transactions and amount for account with the name Sarah T
+2021-11-18 17:01:44.8136 Info - SupportBank.Program: update list of transactions and amount for account with the name Rob S
+2021-11-18 17:01:44.8136 Info - SupportBank.Program: update list of transactions and amount for account with the name Sarah T
+2021-11-18 17:01:44.8136 Info - SupportBank.Program: update list of transactions and amount for account with the name Dan W
+2021-11-18 17:01:44.8136 Info - SupportBank.Program: update list of transactions and amount for account with the name Tim L
+2021-11-18 17:01:44.8136 Info - SupportBank.Program: update list of transactions and amount for account with the name Sam N
+2021-11-18 17:01:44.8136 Info - SupportBank.Program: update list of transactions and amount for account with the name Tim L
+2021-11-18 17:01:44.8136 Info - SupportBank.Program: update list of transactions and amount for account with the name Jon A
+2021-11-18 17:01:44.8136 Info - SupportBank.Program: update list of transactions and amount for account with the name Sarah T
+2021-11-18 17:01:44.8136 Info - SupportBank.Program: update list of transactions and amount for account with the name Dan W
+2021-11-18 17:01:44.8136 Info - SupportBank.Program: update list of transactions and amount for account with the name Todd
+2021-11-18 17:01:44.8136 Info - SupportBank.Program: update list of transactions and amount for account with the name Sam N
+2021-11-18 17:01:44.8136 Info - SupportBank.Program: update list of transactions and amount for account with the name Dan W
+2021-11-18 17:01:44.8136 Info - SupportBank.Program: update list of transactions and amount for account with the name Tim L
+2021-11-18 17:01:44.8136 Info - SupportBank.Program: update list of transactions and amount for account with the name Stephen S
+2021-11-18 17:01:44.8136 Info - SupportBank.Program: update list of transactions and amount for account with the name Chris W
+2021-11-18 17:01:44.8136 Info - SupportBank.Program: update list of transactions and amount for account with the name Sarah T
+2021-11-18 17:01:44.8136 Info - SupportBank.Program: update list of transactions and amount for account with the name Chris W
+2021-11-18 17:01:44.8136 Info - SupportBank.Program: update list of transactions and amount for account with the name Todd
+2021-11-18 17:01:44.8136 Info - SupportBank.Program: update list of transactions and amount for account with the name Tim L
+2021-11-18 17:01:44.8136 Info - SupportBank.Program: update list of transactions and amount for account with the name Stephen S
+2021-11-18 17:01:44.8136 Info - SupportBank.Program: update list of transactions and amount for account with the name Jon A
+2021-11-18 17:01:44.8136 Info - SupportBank.Program: update list of transactions and amount for account with the name Sam N
+2021-11-18 17:01:44.8136 Info - SupportBank.Program: update list of transactions and amount for account with the name Jon A
+2021-11-18 17:01:44.8136 Info - SupportBank.Program: update list of transactions and amount for account with the name Rob S
+2021-11-18 17:01:44.8136 Info - SupportBank.Program: update list of transactions and amount for account with the name Gergana I
+2021-11-18 17:01:44.8136 Info - SupportBank.Program: update list of transactions and amount for account with the name Todd
+2021-11-18 17:01:44.8136 Info - SupportBank.Program: update list of transactions and amount for account with the name Chris W
+2021-11-18 17:01:44.8136 Info - SupportBank.Program: update list of transactions and amount for account with the name Tim L
+2021-11-18 17:01:44.8136 Info - SupportBank.Program: update list of transactions and amount for account with the name Stephen S
+2021-11-18 17:01:44.8136 Info - SupportBank.Program: update list of transactions and amount for account with the name Jon A
+2021-11-18 17:01:44.8136 Info - SupportBank.Program: update list of transactions and amount for account with the name Ben B
+2021-11-18 17:01:44.8136 Info - SupportBank.Program: update list of transactions and amount for account with the name Laura B
+2021-11-18 17:01:44.8136 Info - SupportBank.Program: update list of transactions and amount for account with the name Todd
+2021-11-18 17:01:44.8136 Info - SupportBank.Program: update list of transactions and amount for account with the name Chris W
+2021-11-18 17:01:44.8136 Info - SupportBank.Program: update list of transactions and amount for account with the name Chris W
+2021-11-18 17:01:44.8136 Info - SupportBank.Program: update list of transactions and amount for account with the name Laura B
+2021-11-18 17:01:44.8136 Info - SupportBank.Program: update list of transactions and amount for account with the name Dan W
+2021-11-18 17:01:44.8136 Info - SupportBank.Program: update list of transactions and amount for account with the name Jon A
+2021-11-18 17:01:44.8299 Info - SupportBank.Program: update list of transactions and amount for account with the name Gergana I
+2021-11-18 17:01:44.8299 Info - SupportBank.Program: update list of transactions and amount for account with the name Ben B
+2021-11-18 17:01:44.8299 Info - SupportBank.Program: update list of transactions and amount for account with the name Laura B
+2021-11-18 17:01:44.8299 Info - SupportBank.Program: update list of transactions and amount for account with the name Todd
+2021-11-18 17:01:44.8299 Info - SupportBank.Program: update list of transactions and amount for account with the name Dan W
+2021-11-18 17:01:44.8299 Info - SupportBank.Program: update list of transactions and amount for account with the name Todd
+2021-11-18 17:01:44.8299 Info - SupportBank.Program: update list of transactions and amount for account with the name Ben B
+2021-11-18 17:01:44.8299 Info - SupportBank.Program: update list of transactions and amount for account with the name Sam N
+2021-11-18 17:01:44.8299 Info - SupportBank.Program: update list of transactions and amount for account with the name Laura B
+2021-11-18 17:01:44.8299 Info - SupportBank.Program: update list of transactions and amount for account with the name Dan W
+2021-11-18 17:01:44.8299 Info - SupportBank.Program: update list of transactions and amount for account with the name Sam N
+2021-11-18 17:01:44.8299 Info - SupportBank.Program: update list of transactions and amount for account with the name Gergana I
+2021-11-18 17:01:44.8299 Info - SupportBank.Program: update list of transactions and amount for account with the name Chris W
+2021-11-18 17:01:44.8299 Info - SupportBank.Program: update list of transactions and amount for account with the name Dan W
+2021-11-18 17:01:44.8299 Info - SupportBank.Program: update list of transactions and amount for account with the name Sam N
+2021-11-18 17:01:44.8299 Info - SupportBank.Program: update list of transactions and amount for account with the name Ben B
+2021-11-18 17:01:44.8299 Info - SupportBank.Program: update list of transactions and amount for account with the name Todd
+2021-11-18 17:01:44.8299 Info - SupportBank.Program: update list of transactions and amount for account with the name Sarah T
+2021-11-18 17:01:44.8299 Info - SupportBank.Program: update list of transactions and amount for account with the name Tim L
+2021-11-18 17:01:44.8299 Info - SupportBank.Program: update list of transactions and amount for account with the name Sam N
+2021-11-18 17:01:44.8299 Info - SupportBank.Program: update list of transactions and amount for account with the name Sarah T
+2021-11-18 17:01:44.8299 Info - SupportBank.Program: update list of transactions and amount for account with the name Tim L
+2021-11-18 17:01:44.8299 Info - SupportBank.Program: update list of transactions and amount for account with the name Sarah T
+2021-11-18 17:01:44.8299 Info - SupportBank.Program: update list of transactions and amount for account with the name Tim L
+2021-11-18 17:01:44.8299 Info - SupportBank.Program: update list of transactions and amount for account with the name Dan W
+2021-11-18 17:01:44.8299 Info - SupportBank.Program: update list of transactions and amount for account with the name Jon A
+2021-11-18 17:01:44.8299 Info - SupportBank.Program: update list of transactions and amount for account with the name Tim L
+2021-11-18 17:01:44.8299 Info - SupportBank.Program: update list of transactions and amount for account with the name Stephen S
+2021-11-18 17:01:44.8299 Info - SupportBank.Program: update list of transactions and amount for account with the name Chris W
+2021-11-18 17:01:44.8299 Info - SupportBank.Program: update list of transactions and amount for account with the name Dan W
+2021-11-18 17:01:44.8299 Info - SupportBank.Program: update list of transactions and amount for account with the name Rob S
+2021-11-18 17:01:44.8299 Info - SupportBank.Program: update list of transactions and amount for account with the name Rob S
+2021-11-18 17:01:44.8299 Info - SupportBank.Program: update list of transactions and amount for account with the name Ben B
+2021-11-18 17:01:44.8299 Info - SupportBank.Program: update list of transactions and amount for account with the name Dan W
+2021-11-18 17:01:44.8299 Info - SupportBank.Program: update list of transactions and amount for account with the name Gergana I
+2021-11-18 17:01:44.8299 Info - SupportBank.Program: update list of transactions and amount for account with the name Rob S
+2021-11-18 17:01:44.8451 Info - SupportBank.Program: update list of transactions and amount for account with the name Todd
+2021-11-18 17:01:44.8451 Info - SupportBank.Program: update list of transactions and amount for account with the name Chris W
+2021-11-18 17:01:44.8451 Info - SupportBank.Program: update list of transactions and amount for account with the name Todd
+2021-11-18 17:01:44.8451 Info - SupportBank.Program: update list of transactions and amount for account with the name Chris W
+2021-11-18 17:01:44.8451 Info - SupportBank.Program: update list of transactions and amount for account with the name Sarah T
+2021-11-18 17:01:44.8451 Info - SupportBank.Program: update list of transactions and amount for account with the name Gergana I
+2021-11-18 17:01:44.8451 Info - SupportBank.Program: update list of transactions and amount for account with the name Sarah T
+2021-11-18 17:01:44.8451 Info - SupportBank.Program: update list of transactions and amount for account with the name Jon A
+2021-11-18 17:01:44.8451 Info - SupportBank.Program: update list of transactions and amount for account with the name Tim L
+2021-11-18 17:01:44.8451 Info - SupportBank.Program: update list of transactions and amount for account with the name Tim L
+2021-11-18 17:01:44.8451 Info - SupportBank.Program: update list of transactions and amount for account with the name Sarah T
+2021-11-18 17:01:44.8451 Info - SupportBank.Program: update list of transactions and amount for account with the name Sam N
+2021-11-18 17:01:44.8451 Info - SupportBank.Program: update list of transactions and amount for account with the name Laura B
+2021-11-18 17:01:44.8451 Info - SupportBank.Program: update list of transactions and amount for account with the name Sarah T
+2021-11-18 17:01:44.8451 Info - SupportBank.Program: update list of transactions and amount for account with the name Jon A
+2021-11-18 17:01:44.8451 Info - SupportBank.Program: update list of transactions and amount for account with the name Tim L
+2021-11-18 17:01:44.8451 Info - SupportBank.Program: update list of transactions and amount for account with the name Stephen S
+2021-11-18 17:01:44.8451 Info - SupportBank.Program: update list of transactions and amount for account with the name Sarah T
+2021-11-18 17:01:44.8451 Info - SupportBank.Program: update list of transactions and amount for account with the name Laura B
+2021-11-18 17:01:44.8451 Info - SupportBank.Program: update list of transactions and amount for account with the name Stephen S
+2021-11-18 17:01:44.8451 Info - SupportBank.Program: update list of transactions and amount for account with the name Sarah T
+2021-11-18 17:01:44.8451 Info - SupportBank.Program: update list of transactions and amount for account with the name Tim L
+2021-11-18 17:01:44.8451 Info - SupportBank.Program: update list of transactions and amount for account with the name Jon A
+2021-11-18 17:01:44.8451 Info - SupportBank.Program: update list of transactions and amount for account with the name Rob S
+2021-11-18 17:01:44.8451 Info - SupportBank.Program: update list of transactions and amount for account with the name Chris W
+2021-11-18 17:01:44.8451 Info - SupportBank.Program: update list of transactions and amount for account with the name Tim L
+2021-11-18 17:01:44.8451 Info - SupportBank.Program: update list of transactions and amount for account with the name Todd
+2021-11-18 17:02:51.9138 Info - SupportBank.Program: Transaction 2012 strarted
+2021-11-18 17:02:52.0797 Info - SupportBank.Program: New Account for name Gergana I has been made
+2021-11-18 17:02:52.0797 Info - SupportBank.Program: New Account for name Jon A has been made
+2021-11-18 17:02:52.0797 Info - SupportBank.Program: New Account for name Sam N has been made
+2021-11-18 17:02:52.0797 Info - SupportBank.Program: New Account for name Dan W has been made
+2021-11-18 17:02:52.0797 Info - SupportBank.Program: New Account for name Stephen S has been made
+2021-11-18 17:02:52.0797 Info - SupportBank.Program: New Account for name Sarah T has been made
+2021-11-18 17:02:52.0797 Info - SupportBank.Program: New Account for name Rob S has been made
+2021-11-18 17:02:52.0797 Info - SupportBank.Program: update list of transactions and amount for account with the name Sarah T
+2021-11-18 17:02:52.0797 Info - SupportBank.Program: New Account for name Tim L has been made
+2021-11-18 17:02:52.0797 Info - SupportBank.Program: New Account for name Chris W has been made
+2021-11-18 17:02:52.0797 Info - SupportBank.Program: update list of transactions and amount for account with the name Tim L
+2021-11-18 17:02:52.0797 Info - SupportBank.Program: update list of transactions and amount for account with the name Rob S
+2021-11-18 17:02:52.0797 Info - SupportBank.Program: update list of transactions and amount for account with the name Sarah T
+2021-11-18 17:02:52.0797 Info - SupportBank.Program: update list of transactions and amount for account with the name Sam N
+2021-11-18 17:02:52.0797 Info - SupportBank.Program: update list of transactions and amount for account with the name Dan W
+2021-11-18 17:02:52.0797 Info - SupportBank.Program: New Account for name Todd has been made
+2021-11-18 17:02:52.0797 Info - SupportBank.Program: update list of transactions and amount for account with the name Chris W
+2021-11-18 17:02:52.0797 Info - SupportBank.Program: New Account for name Ben B has been made
+2021-11-18 17:02:52.0797 Info - SupportBank.Program: update list of transactions and amount for account with the name Chris W
+2021-11-18 17:02:52.0797 Info - SupportBank.Program: update list of transactions and amount for account with the name Tim L
+2021-11-18 17:02:52.0797 Info - SupportBank.Program: update list of transactions and amount for account with the name Rob S
+2021-11-18 17:02:52.0797 Info - SupportBank.Program: update list of transactions and amount for account with the name Tim L
+2021-11-18 17:02:52.0797 Info - SupportBank.Program: update list of transactions and amount for account with the name Chris W
+2021-11-18 17:02:52.0797 Info - SupportBank.Program: update list of transactions and amount for account with the name Rob S
+2021-11-18 17:02:52.0797 Info - SupportBank.Program: update list of transactions and amount for account with the name Stephen S
+2021-11-18 17:02:52.0797 Info - SupportBank.Program: update list of transactions and amount for account with the name Gergana I
+2021-11-18 17:02:52.0797 Info - SupportBank.Program: update list of transactions and amount for account with the name Stephen S
+2021-11-18 17:02:52.0797 Info - SupportBank.Program: update list of transactions and amount for account with the name Todd
+2021-11-18 17:02:52.0797 Info - SupportBank.Program: update list of transactions and amount for account with the name Stephen S
+2021-11-18 17:02:52.0797 Info - SupportBank.Program: New Account for name Laura B has been made
+2021-11-18 17:02:52.0797 Info - SupportBank.Program: update list of transactions and amount for account with the name Sam N
+2021-11-18 17:02:52.0797 Info - SupportBank.Program: update list of transactions and amount for account with the name Rob S
+2021-11-18 17:02:52.0797 Info - SupportBank.Program: update list of transactions and amount for account with the name Ben B
+2021-11-18 17:02:52.0797 Info - SupportBank.Program: update list of transactions and amount for account with the name Chris W
+2021-11-18 17:02:52.0797 Info - SupportBank.Program: update list of transactions and amount for account with the name Rob S
+2021-11-18 17:02:52.0797 Info - SupportBank.Program: update list of transactions and amount for account with the name Jon A
+2021-11-18 17:02:52.0797 Info - SupportBank.Program: update list of transactions and amount for account with the name Todd
+2021-11-18 17:02:52.0797 Info - SupportBank.Program: update list of transactions and amount for account with the name Ben B
+2021-11-18 17:02:52.0797 Info - SupportBank.Program: update list of transactions and amount for account with the name Laura B
+2021-11-18 17:02:52.0797 Info - SupportBank.Program: update list of transactions and amount for account with the name Todd
+2021-11-18 17:02:52.0945 Info - SupportBank.Program: update list of transactions and amount for account with the name Chris W
+2021-11-18 17:02:52.0945 Info - SupportBank.Program: update list of transactions and amount for account with the name Stephen S
+2021-11-18 17:02:52.0945 Info - SupportBank.Program: update list of transactions and amount for account with the name Sam N
+2021-11-18 17:02:52.0945 Info - SupportBank.Program: update list of transactions and amount for account with the name Dan W
+2021-11-18 17:02:52.0945 Info - SupportBank.Program: update list of transactions and amount for account with the name Gergana I
+2021-11-18 17:02:52.0945 Info - SupportBank.Program: update list of transactions and amount for account with the name Rob S
+2021-11-18 17:02:52.0945 Info - SupportBank.Program: update list of transactions and amount for account with the name Dan W
+2021-11-18 17:02:52.0945 Info - SupportBank.Program: update list of transactions and amount for account with the name Tim L
+2021-11-18 17:02:52.0945 Info - SupportBank.Program: update list of transactions and amount for account with the name Tim L
+2021-11-18 17:02:52.0945 Info - SupportBank.Program: update list of transactions and amount for account with the name Ben B
+2021-11-18 17:02:52.0945 Info - SupportBank.Program: update list of transactions and amount for account with the name Rob S
+2021-11-18 17:02:52.0945 Info - SupportBank.Program: update list of transactions and amount for account with the name Ben B
+2021-11-18 17:02:52.0945 Info - SupportBank.Program: update list of transactions and amount for account with the name Stephen S
+2021-11-18 17:02:52.0945 Info - SupportBank.Program: update list of transactions and amount for account with the name Gergana I
+2021-11-18 17:02:52.0945 Info - SupportBank.Program: update list of transactions and amount for account with the name Gergana I
+2021-11-18 17:02:52.0945 Info - SupportBank.Program: update list of transactions and amount for account with the name Chris W
+2021-11-18 17:02:52.0945 Info - SupportBank.Program: update list of transactions and amount for account with the name Gergana I
+2021-11-18 17:02:52.0945 Info - SupportBank.Program: update list of transactions and amount for account with the name Rob S
+2021-11-18 17:02:52.0945 Info - SupportBank.Program: update list of transactions and amount for account with the name Dan W
+2021-11-18 17:02:52.0945 Info - SupportBank.Program: update list of transactions and amount for account with the name Stephen S
+2021-11-18 17:02:52.0945 Info - SupportBank.Program: update list of transactions and amount for account with the name Jon A
+2021-11-18 17:02:52.0945 Info - SupportBank.Program: update list of transactions and amount for account with the name Sarah T
+2021-11-18 17:02:52.0945 Info - SupportBank.Program: update list of transactions and amount for account with the name Stephen S
+2021-11-18 17:02:52.0945 Info - SupportBank.Program: update list of transactions and amount for account with the name Dan W
+2021-11-18 17:02:52.0945 Info - SupportBank.Program: update list of transactions and amount for account with the name Stephen S
+2021-11-18 17:02:52.0945 Info - SupportBank.Program: update list of transactions and amount for account with the name Tim L
+2021-11-18 17:02:52.0945 Info - SupportBank.Program: update list of transactions and amount for account with the name Gergana I
+2021-11-18 17:02:52.0945 Info - SupportBank.Program: update list of transactions and amount for account with the name Laura B
+2021-11-18 17:02:52.0945 Info - SupportBank.Program: update list of transactions and amount for account with the name Sarah T
+2021-11-18 17:02:52.0945 Info - SupportBank.Program: update list of transactions and amount for account with the name Gergana I
+2021-11-18 17:02:52.0945 Info - SupportBank.Program: update list of transactions and amount for account with the name Laura B
+2021-11-18 17:02:52.0945 Info - SupportBank.Program: update list of transactions and amount for account with the name Dan W
+2021-11-18 17:02:52.0945 Info - SupportBank.Program: update list of transactions and amount for account with the name Dan W
+2021-11-18 17:02:52.0945 Info - SupportBank.Program: update list of transactions and amount for account with the name Chris W
+2021-11-18 17:02:52.0945 Info - SupportBank.Program: update list of transactions and amount for account with the name Dan W
+2021-11-18 17:02:52.0945 Info - SupportBank.Program: update list of transactions and amount for account with the name Todd
+2021-11-18 17:02:52.0945 Info - SupportBank.Program: update list of transactions and amount for account with the name Sam N
+2021-11-18 17:02:52.0945 Info - SupportBank.Program: update list of transactions and amount for account with the name Chris W
+2021-11-18 17:02:52.0945 Info - SupportBank.Program: update list of transactions and amount for account with the name Tim L
+2021-11-18 17:02:52.0945 Info - SupportBank.Program: update list of transactions and amount for account with the name Chris W
+2021-11-18 17:02:52.0945 Info - SupportBank.Program: update list of transactions and amount for account with the name Sarah T
+2021-11-18 17:02:52.0945 Info - SupportBank.Program: update list of transactions and amount for account with the name Dan W
+2021-11-18 17:02:52.0945 Info - SupportBank.Program: update list of transactions and amount for account with the name Gergana I
+2021-11-18 17:02:52.0945 Info - SupportBank.Program: update list of transactions and amount for account with the name Jon A
+2021-11-18 17:02:52.0945 Info - SupportBank.Program: update list of transactions and amount for account with the name Sam N
+2021-11-18 17:02:52.1112 Info - SupportBank.Program: update list of transactions and amount for account with the name Todd
+2021-11-18 17:02:52.1112 Info - SupportBank.Program: update list of transactions and amount for account with the name Laura B
+2021-11-18 17:02:52.1112 Info - SupportBank.Program: update list of transactions and amount for account with the name Dan W
+2021-11-18 17:02:52.1112 Info - SupportBank.Program: update list of transactions and amount for account with the name Laura B
+2021-11-18 17:02:52.1112 Info - SupportBank.Program: update list of transactions and amount for account with the name Rob S
+2021-11-18 17:02:52.1112 Info - SupportBank.Program: update list of transactions and amount for account with the name Stephen S
+2021-11-18 17:02:52.1112 Info - SupportBank.Program: update list of transactions and amount for account with the name Ben B
+2021-11-18 17:02:52.1112 Info - SupportBank.Program: update list of transactions and amount for account with the name Todd
+2021-11-18 17:02:52.1112 Info - SupportBank.Program: update list of transactions and amount for account with the name Dan W
+2021-11-18 17:02:52.1112 Info - SupportBank.Program: update list of transactions and amount for account with the name Laura B
+2021-11-18 17:02:52.1112 Info - SupportBank.Program: update list of transactions and amount for account with the name Sam N
+2021-11-18 17:02:52.1112 Info - SupportBank.Program: update list of transactions and amount for account with the name Laura B
+2021-11-18 17:02:52.1112 Info - SupportBank.Program: update list of transactions and amount for account with the name Ben B
+2021-11-18 17:02:52.1112 Info - SupportBank.Program: update list of transactions and amount for account with the name Jon A
+2021-11-18 17:02:52.1112 Info - SupportBank.Program: update list of transactions and amount for account with the name Tim L
+2021-11-18 17:02:52.1112 Info - SupportBank.Program: update list of transactions and amount for account with the name Sarah T
+2021-11-18 17:02:52.1112 Info - SupportBank.Program: update list of transactions and amount for account with the name Laura B
+2021-11-18 17:02:52.1112 Info - SupportBank.Program: update list of transactions and amount for account with the name Gergana I
+2021-11-18 17:02:52.1112 Info - SupportBank.Program: update list of transactions and amount for account with the name Ben B
+2021-11-18 17:02:52.1112 Info - SupportBank.Program: update list of transactions and amount for account with the name Todd
+2021-11-18 17:02:52.1112 Info - SupportBank.Program: update list of transactions and amount for account with the name Sam N
+2021-11-18 17:02:52.1112 Info - SupportBank.Program: update list of transactions and amount for account with the name Sam N
+2021-11-18 17:02:52.1112 Info - SupportBank.Program: update list of transactions and amount for account with the name Dan W
+2021-11-18 17:02:52.1112 Info - SupportBank.Program: update list of transactions and amount for account with the name Chris W
+2021-11-18 17:02:52.1112 Info - SupportBank.Program: update list of transactions and amount for account with the name Rob S
+2021-11-18 17:02:52.1112 Info - SupportBank.Program: update list of transactions and amount for account with the name Rob S
+2021-11-18 17:02:52.1112 Info - SupportBank.Program: update list of transactions and amount for account with the name Sam N
+2021-11-18 17:02:52.1112 Info - SupportBank.Program: update list of transactions and amount for account with the name Todd
+2021-11-18 17:02:52.1112 Info - SupportBank.Program: update list of transactions and amount for account with the name Chris W
+2021-11-18 17:02:52.1112 Info - SupportBank.Program: update list of transactions and amount for account with the name Sarah T
+2021-11-18 17:02:52.1112 Info - SupportBank.Program: update list of transactions and amount for account with the name Chris W
+2021-11-18 17:02:52.1112 Info - SupportBank.Program: update list of transactions and amount for account with the name Tim L
+2021-11-18 17:02:52.1261 Info - SupportBank.Program: update list of transactions and amount for account with the name Ben B
+2021-11-18 17:02:52.1261 Info - SupportBank.Program: update list of transactions and amount for account with the name Gergana I
+2021-11-18 17:02:52.1261 Info - SupportBank.Program: update list of transactions and amount for account with the name Tim L
+2021-11-18 17:02:52.1261 Info - SupportBank.Program: update list of transactions and amount for account with the name Chris W
+2021-11-18 17:02:52.1261 Info - SupportBank.Program: update list of transactions and amount for account with the name Jon A
+2021-11-18 17:02:52.1261 Info - SupportBank.Program: update list of transactions and amount for account with the name Laura B
+2021-11-18 17:02:52.1261 Info - SupportBank.Program: update list of transactions and amount for account with the name Jon A
+2021-11-18 17:02:52.1261 Info - SupportBank.Program: update list of transactions and amount for account with the name Sarah T
+2021-11-18 17:02:52.1261 Info - SupportBank.Program: update list of transactions and amount for account with the name Dan W
+2021-11-18 17:02:52.1261 Info - SupportBank.Program: update list of transactions and amount for account with the name Dan W
+2021-11-18 17:02:52.1261 Info - SupportBank.Program: update list of transactions and amount for account with the name Stephen S
+2021-11-18 17:02:52.1261 Info - SupportBank.Program: update list of transactions and amount for account with the name Sarah T
+2021-11-18 17:02:52.1261 Info - SupportBank.Program: update list of transactions and amount for account with the name Chris W
+2021-11-18 17:02:52.1261 Info - SupportBank.Program: update list of transactions and amount for account with the name Todd
+2021-11-18 17:02:52.1261 Info - SupportBank.Program: update list of transactions and amount for account with the name Stephen S
+2021-11-18 17:02:52.1261 Info - SupportBank.Program: update list of transactions and amount for account with the name Laura B
+2021-11-18 17:02:52.1261 Info - SupportBank.Program: update list of transactions and amount for account with the name Chris W
+2021-11-18 17:02:52.1261 Info - SupportBank.Program: update list of transactions and amount for account with the name Ben B
+2021-11-18 17:02:52.1261 Info - SupportBank.Program: update list of transactions and amount for account with the name Chris W
+2021-11-18 17:02:52.1261 Info - SupportBank.Program: update list of transactions and amount for account with the name Laura B
+2021-11-18 17:02:52.1261 Info - SupportBank.Program: update list of transactions and amount for account with the name Sam N
+2021-11-18 17:02:52.1261 Info - SupportBank.Program: update list of transactions and amount for account with the name Stephen S
+2021-11-18 17:02:52.1261 Info - SupportBank.Program: update list of transactions and amount for account with the name Todd
+2021-11-18 17:02:52.1261 Info - SupportBank.Program: update list of transactions and amount for account with the name Dan W
+2021-11-18 17:02:52.1261 Info - SupportBank.Program: update list of transactions and amount for account with the name Jon A
+2021-11-18 17:02:52.1261 Info - SupportBank.Program: update list of transactions and amount for account with the name Chris W
+2021-11-18 17:02:52.1261 Info - SupportBank.Program: update list of transactions and amount for account with the name Stephen S
+2021-11-18 17:02:52.1261 Info - SupportBank.Program: update list of transactions and amount for account with the name Laura B
+2021-11-18 17:02:52.1261 Info - SupportBank.Program: update list of transactions and amount for account with the name Jon A
+2021-11-18 17:02:52.1261 Info - SupportBank.Program: update list of transactions and amount for account with the name Stephen S
+2021-11-18 17:02:52.1261 Info - SupportBank.Program: update list of transactions and amount for account with the name Tim L
+2021-11-18 17:02:52.1261 Info - SupportBank.Program: update list of transactions and amount for account with the name Jon A
+2021-11-18 17:02:52.1261 Info - SupportBank.Program: update list of transactions and amount for account with the name Dan W
+2021-11-18 17:02:52.1261 Info - SupportBank.Program: update list of transactions and amount for account with the name Sarah T
+2021-11-18 17:02:52.1261 Info - SupportBank.Program: update list of transactions and amount for account with the name Ben B
+2021-11-18 17:02:52.1261 Info - SupportBank.Program: update list of transactions and amount for account with the name Laura B
+2021-11-18 17:02:52.1261 Info - SupportBank.Program: update list of transactions and amount for account with the name Rob S
+2021-11-18 17:02:52.1261 Info - SupportBank.Program: update list of transactions and amount for account with the name Tim L
+2021-11-18 17:02:52.1261 Info - SupportBank.Program: update list of transactions and amount for account with the name Ben B
+2021-11-18 17:02:52.1261 Info - SupportBank.Program: update list of transactions and amount for account with the name Jon A
+2021-11-18 17:02:52.1261 Info - SupportBank.Program: update list of transactions and amount for account with the name Laura B
+2021-11-18 17:02:52.1413 Info - SupportBank.Program: update list of transactions and amount for account with the name Tim L
+2021-11-18 17:02:52.1413 Info - SupportBank.Program: update list of transactions and amount for account with the name Todd
+2021-11-18 17:02:52.1413 Info - SupportBank.Program: update list of transactions and amount for account with the name Ben B
+2021-11-18 17:02:52.1413 Info - SupportBank.Program: update list of transactions and amount for account with the name Chris W
+2021-11-18 17:02:52.1413 Info - SupportBank.Program: update list of transactions and amount for account with the name Stephen S
+2021-11-18 17:02:52.1413 Info - SupportBank.Program: update list of transactions and amount for account with the name Jon A
+2021-11-18 17:02:52.1413 Info - SupportBank.Program: update list of transactions and amount for account with the name Jon A
+2021-11-18 17:02:52.1413 Info - SupportBank.Program: update list of transactions and amount for account with the name Rob S
+2021-11-18 17:02:52.1413 Info - SupportBank.Program: update list of transactions and amount for account with the name Jon A
+2021-11-18 17:02:52.1413 Info - SupportBank.Program: update list of transactions and amount for account with the name Sam N
+2021-11-18 17:02:52.1413 Info - SupportBank.Program: update list of transactions and amount for account with the name Rob S
+2021-11-18 17:02:52.1413 Info - SupportBank.Program: update list of transactions and amount for account with the name Todd
+2021-11-18 17:02:52.1413 Info - SupportBank.Program: update list of transactions and amount for account with the name Todd
+2021-11-18 17:02:52.1413 Info - SupportBank.Program: update list of transactions and amount for account with the name Dan W
+2021-11-18 17:02:52.1413 Info - SupportBank.Program: update list of transactions and amount for account with the name Jon A
+2021-11-18 17:02:52.1413 Info - SupportBank.Program: update list of transactions and amount for account with the name Chris W
+2021-11-18 17:02:52.1413 Info - SupportBank.Program: update list of transactions and amount for account with the name Rob S
+2021-11-18 17:02:52.1413 Info - SupportBank.Program: update list of transactions and amount for account with the name Sam N
+2021-11-18 17:02:52.1413 Info - SupportBank.Program: update list of transactions and amount for account with the name Stephen S
+2021-11-18 17:02:52.1413 Info - SupportBank.Program: update list of transactions and amount for account with the name Sam N
+2021-11-18 17:02:52.1413 Info - SupportBank.Program: update list of transactions and amount for account with the name Tim L
+2021-11-18 17:02:52.1413 Info - SupportBank.Program: update list of transactions and amount for account with the name Sam N
+2021-11-18 17:02:52.1413 Info - SupportBank.Program: update list of transactions and amount for account with the name Laura B
+2021-11-18 17:02:52.1413 Info - SupportBank.Program: update list of transactions and amount for account with the name Dan W
+2021-11-18 17:02:52.1413 Info - SupportBank.Program: update list of transactions and amount for account with the name Chris W
+2021-11-18 17:02:52.1413 Info - SupportBank.Program: update list of transactions and amount for account with the name Laura B
+2021-11-18 17:02:52.1413 Info - SupportBank.Program: update list of transactions and amount for account with the name Chris W
+2021-11-18 17:02:52.1413 Info - SupportBank.Program: update list of transactions and amount for account with the name Dan W
+2021-11-18 17:02:52.1413 Info - SupportBank.Program: update list of transactions and amount for account with the name Chris W
+2021-11-18 17:02:52.1413 Info - SupportBank.Program: update list of transactions and amount for account with the name Todd
+2021-11-18 17:02:52.1413 Info - SupportBank.Program: update list of transactions and amount for account with the name Todd
+2021-11-18 17:02:52.1413 Info - SupportBank.Program: update list of transactions and amount for account with the name Tim L
+2021-11-18 17:02:52.1413 Info - SupportBank.Program: update list of transactions and amount for account with the name Sarah T
+2021-11-18 17:02:52.1413 Info - SupportBank.Program: update list of transactions and amount for account with the name Stephen S
+2021-11-18 17:02:52.1413 Info - SupportBank.Program: update list of transactions and amount for account with the name Laura B
+2021-11-18 17:02:52.1413 Info - SupportBank.Program: update list of transactions and amount for account with the name Stephen S
+2021-11-18 17:02:52.1413 Info - SupportBank.Program: update list of transactions and amount for account with the name Dan W
+2021-11-18 17:02:52.1413 Info - SupportBank.Program: update list of transactions and amount for account with the name Gergana I
+2021-11-18 17:02:52.1413 Info - SupportBank.Program: update list of transactions and amount for account with the name Sarah T
+2021-11-18 17:02:52.1413 Info - SupportBank.Program: update list of transactions and amount for account with the name Rob S
+2021-11-18 17:02:52.1413 Info - SupportBank.Program: update list of transactions and amount for account with the name Sarah T
+2021-11-18 17:02:52.1413 Info - SupportBank.Program: update list of transactions and amount for account with the name Dan W
+2021-11-18 17:02:52.1569 Info - SupportBank.Program: update list of transactions and amount for account with the name Tim L
+2021-11-18 17:02:52.1569 Info - SupportBank.Program: update list of transactions and amount for account with the name Sam N
+2021-11-18 17:02:52.1569 Info - SupportBank.Program: update list of transactions and amount for account with the name Tim L
+2021-11-18 17:02:52.1569 Info - SupportBank.Program: update list of transactions and amount for account with the name Jon A
+2021-11-18 17:02:52.1569 Info - SupportBank.Program: update list of transactions and amount for account with the name Sarah T
+2021-11-18 17:02:52.1569 Info - SupportBank.Program: update list of transactions and amount for account with the name Dan W
+2021-11-18 17:02:52.1569 Info - SupportBank.Program: update list of transactions and amount for account with the name Todd
+2021-11-18 17:02:52.1569 Info - SupportBank.Program: update list of transactions and amount for account with the name Sam N
+2021-11-18 17:02:52.1569 Info - SupportBank.Program: update list of transactions and amount for account with the name Dan W
+2021-11-18 17:02:52.1569 Info - SupportBank.Program: update list of transactions and amount for account with the name Tim L
+2021-11-18 17:02:52.1569 Info - SupportBank.Program: update list of transactions and amount for account with the name Stephen S
+2021-11-18 17:02:52.1569 Info - SupportBank.Program: update list of transactions and amount for account with the name Chris W
+2021-11-18 17:02:52.1569 Info - SupportBank.Program: update list of transactions and amount for account with the name Sarah T
+2021-11-18 17:02:52.1569 Info - SupportBank.Program: update list of transactions and amount for account with the name Chris W
+2021-11-18 17:02:52.1569 Info - SupportBank.Program: update list of transactions and amount for account with the name Todd
+2021-11-18 17:02:52.1569 Info - SupportBank.Program: update list of transactions and amount for account with the name Tim L
+2021-11-18 17:02:52.1569 Info - SupportBank.Program: update list of transactions and amount for account with the name Stephen S
+2021-11-18 17:02:52.1569 Info - SupportBank.Program: update list of transactions and amount for account with the name Jon A
+2021-11-18 17:02:52.1569 Info - SupportBank.Program: update list of transactions and amount for account with the name Sam N
+2021-11-18 17:02:52.1569 Info - SupportBank.Program: update list of transactions and amount for account with the name Jon A
+2021-11-18 17:02:52.1569 Info - SupportBank.Program: update list of transactions and amount for account with the name Rob S
+2021-11-18 17:02:52.1569 Info - SupportBank.Program: update list of transactions and amount for account with the name Gergana I
+2021-11-18 17:02:52.1569 Info - SupportBank.Program: update list of transactions and amount for account with the name Todd
+2021-11-18 17:02:52.1569 Info - SupportBank.Program: update list of transactions and amount for account with the name Chris W
+2021-11-18 17:02:52.1569 Info - SupportBank.Program: update list of transactions and amount for account with the name Tim L
+2021-11-18 17:02:52.1569 Info - SupportBank.Program: update list of transactions and amount for account with the name Stephen S
+2021-11-18 17:02:52.1569 Info - SupportBank.Program: update list of transactions and amount for account with the name Jon A
+2021-11-18 17:02:52.1569 Info - SupportBank.Program: update list of transactions and amount for account with the name Ben B
+2021-11-18 17:02:52.1569 Info - SupportBank.Program: update list of transactions and amount for account with the name Laura B
+2021-11-18 17:02:52.1569 Info - SupportBank.Program: update list of transactions and amount for account with the name Todd
+2021-11-18 17:02:52.1569 Info - SupportBank.Program: update list of transactions and amount for account with the name Chris W
+2021-11-18 17:02:52.1569 Info - SupportBank.Program: update list of transactions and amount for account with the name Chris W
+2021-11-18 17:02:52.1569 Info - SupportBank.Program: update list of transactions and amount for account with the name Laura B
+2021-11-18 17:02:52.1569 Info - SupportBank.Program: update list of transactions and amount for account with the name Dan W
+2021-11-18 17:02:52.1569 Info - SupportBank.Program: update list of transactions and amount for account with the name Jon A
+2021-11-18 17:02:52.1569 Info - SupportBank.Program: update list of transactions and amount for account with the name Gergana I
+2021-11-18 17:02:52.1569 Info - SupportBank.Program: update list of transactions and amount for account with the name Ben B
+2021-11-18 17:02:52.1569 Info - SupportBank.Program: update list of transactions and amount for account with the name Laura B
+2021-11-18 17:02:52.1569 Info - SupportBank.Program: update list of transactions and amount for account with the name Todd
+2021-11-18 17:02:52.1569 Info - SupportBank.Program: update list of transactions and amount for account with the name Dan W
+2021-11-18 17:02:52.1569 Info - SupportBank.Program: update list of transactions and amount for account with the name Todd
+2021-11-18 17:02:52.1569 Info - SupportBank.Program: update list of transactions and amount for account with the name Ben B
+2021-11-18 17:02:52.1569 Info - SupportBank.Program: update list of transactions and amount for account with the name Sam N
+2021-11-18 17:02:52.1569 Info - SupportBank.Program: update list of transactions and amount for account with the name Laura B
+2021-11-18 17:02:52.1569 Info - SupportBank.Program: update list of transactions and amount for account with the name Dan W
+2021-11-18 17:02:52.1569 Info - SupportBank.Program: update list of transactions and amount for account with the name Sam N
+2021-11-18 17:02:52.1726 Info - SupportBank.Program: update list of transactions and amount for account with the name Gergana I
+2021-11-18 17:02:52.1726 Info - SupportBank.Program: update list of transactions and amount for account with the name Chris W
+2021-11-18 17:02:52.1726 Info - SupportBank.Program: update list of transactions and amount for account with the name Dan W
+2021-11-18 17:02:52.1726 Info - SupportBank.Program: update list of transactions and amount for account with the name Sam N
+2021-11-18 17:02:52.1726 Info - SupportBank.Program: update list of transactions and amount for account with the name Ben B
+2021-11-18 17:02:52.1726 Info - SupportBank.Program: update list of transactions and amount for account with the name Todd
+2021-11-18 17:02:52.1726 Info - SupportBank.Program: update list of transactions and amount for account with the name Sarah T
+2021-11-18 17:02:52.1726 Info - SupportBank.Program: update list of transactions and amount for account with the name Tim L
+2021-11-18 17:02:52.1726 Info - SupportBank.Program: update list of transactions and amount for account with the name Sam N
+2021-11-18 17:02:52.1726 Info - SupportBank.Program: update list of transactions and amount for account with the name Sarah T
+2021-11-18 17:02:52.1726 Info - SupportBank.Program: update list of transactions and amount for account with the name Tim L
+2021-11-18 17:02:52.1726 Info - SupportBank.Program: update list of transactions and amount for account with the name Sarah T
+2021-11-18 17:02:52.1726 Info - SupportBank.Program: update list of transactions and amount for account with the name Tim L
+2021-11-18 17:02:52.1726 Info - SupportBank.Program: update list of transactions and amount for account with the name Dan W
+2021-11-18 17:02:52.1726 Info - SupportBank.Program: update list of transactions and amount for account with the name Jon A
+2021-11-18 17:02:52.1726 Info - SupportBank.Program: update list of transactions and amount for account with the name Tim L
+2021-11-18 17:02:52.1726 Info - SupportBank.Program: update list of transactions and amount for account with the name Stephen S
+2021-11-18 17:02:52.1726 Info - SupportBank.Program: update list of transactions and amount for account with the name Chris W
+2021-11-18 17:02:52.1726 Info - SupportBank.Program: update list of transactions and amount for account with the name Dan W
+2021-11-18 17:02:52.1726 Info - SupportBank.Program: update list of transactions and amount for account with the name Rob S
+2021-11-18 17:02:52.1726 Info - SupportBank.Program: update list of transactions and amount for account with the name Rob S
+2021-11-18 17:02:52.1726 Info - SupportBank.Program: update list of transactions and amount for account with the name Ben B
+2021-11-18 17:02:52.1726 Info - SupportBank.Program: update list of transactions and amount for account with the name Dan W
+2021-11-18 17:02:52.1726 Info - SupportBank.Program: update list of transactions and amount for account with the name Gergana I
+2021-11-18 17:02:52.1726 Info - SupportBank.Program: update list of transactions and amount for account with the name Rob S
+2021-11-18 17:02:52.1726 Info - SupportBank.Program: update list of transactions and amount for account with the name Todd
+2021-11-18 17:02:52.1726 Info - SupportBank.Program: update list of transactions and amount for account with the name Chris W
+2021-11-18 17:02:52.1726 Info - SupportBank.Program: update list of transactions and amount for account with the name Todd
+2021-11-18 17:02:52.1726 Info - SupportBank.Program: update list of transactions and amount for account with the name Chris W
+2021-11-18 17:02:52.1726 Info - SupportBank.Program: update list of transactions and amount for account with the name Sarah T
+2021-11-18 17:02:52.1726 Info - SupportBank.Program: update list of transactions and amount for account with the name Gergana I
+2021-11-18 17:02:52.1726 Info - SupportBank.Program: update list of transactions and amount for account with the name Sarah T
+2021-11-18 17:02:52.1726 Info - SupportBank.Program: update list of transactions and amount for account with the name Jon A
+2021-11-18 17:02:52.1726 Info - SupportBank.Program: update list of transactions and amount for account with the name Tim L
+2021-11-18 17:02:52.1726 Info - SupportBank.Program: update list of transactions and amount for account with the name Tim L
+2021-11-18 17:02:52.1726 Info - SupportBank.Program: update list of transactions and amount for account with the name Sarah T
+2021-11-18 17:02:52.1726 Info - SupportBank.Program: update list of transactions and amount for account with the name Sam N
+2021-11-18 17:02:52.1726 Info - SupportBank.Program: update list of transactions and amount for account with the name Laura B
+2021-11-18 17:02:52.1726 Info - SupportBank.Program: update list of transactions and amount for account with the name Sarah T
+2021-11-18 17:02:52.1726 Info - SupportBank.Program: update list of transactions and amount for account with the name Jon A
+2021-11-18 17:02:52.1726 Info - SupportBank.Program: update list of transactions and amount for account with the name Tim L
+2021-11-18 17:02:52.1726 Info - SupportBank.Program: update list of transactions and amount for account with the name Stephen S
+2021-11-18 17:02:52.1726 Info - SupportBank.Program: update list of transactions and amount for account with the name Sarah T
+2021-11-18 17:02:52.1726 Info - SupportBank.Program: update list of transactions and amount for account with the name Laura B
+2021-11-18 17:02:52.1726 Info - SupportBank.Program: update list of transactions and amount for account with the name Stephen S
+2021-11-18 17:02:52.1726 Info - SupportBank.Program: update list of transactions and amount for account with the name Sarah T
+2021-11-18 17:02:52.1915 Info - SupportBank.Program: update list of transactions and amount for account with the name Tim L
+2021-11-18 17:02:52.1915 Info - SupportBank.Program: update list of transactions and amount for account with the name Jon A
+2021-11-18 17:02:52.1915 Info - SupportBank.Program: update list of transactions and amount for account with the name Rob S
+2021-11-18 17:02:52.1915 Info - SupportBank.Program: update list of transactions and amount for account with the name Chris W
+2021-11-18 17:02:52.1915 Info - SupportBank.Program: update list of transactions and amount for account with the name Tim L
+2021-11-18 17:02:52.1915 Info - SupportBank.Program: update list of transactions and amount for account with the name Todd
+2021-11-18 17:02:57.5761 Info - SupportBank.Program: User listed all accounts
+2021-11-18 17:02:57.5761 Info - SupportBank.Program: Listed all data
+2021-11-18 17:03:09.5884 Info - SupportBank.Program: User listed all transactions for account named list Jon A
+2021-11-18 17:03:09.5963 Info - SupportBank.Program: Listed data for Jon A
+2021-11-18 17:03:34.8697 Info - SupportBank.Program: User wants to exit
+2021-11-18 17:03:34.8697 Info - SupportBank.Program: Transaction 2012 ended

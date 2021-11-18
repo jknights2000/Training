@@ -20,7 +20,8 @@ namespace SupportBank
             config.AddTarget("File Logger", target);
             config.LoggingRules.Add(new LoggingRule("*", LogLevel.Debug, target));
             LogManager.Configuration = config;
-            XAML(@"C:\Users\Joshua.knights\Work\Training\Training\SupportBank\SupportBank\Transactions2012.xml");
+            Trans2012();
+            //XAML(@"C:\Users\Joshua.knights\Work\Training\Training\SupportBank\SupportBank\Transactions2012.xml");
             //Trans2013();
             //Trans2014();
             //Trans2015();
@@ -30,7 +31,41 @@ namespace SupportBank
        
 
         
-        
+        public static void Trans2012()
+        {
+            Logger.Info("Transaction 2012 strarted");
+            Dictionary<string, Account> accountsd = XAML(@"C:\Users\Joshua.knights\Work\Training\Training\SupportBank\SupportBank\Transactions2012.xml");
+            bool exit = false;
+            while (!exit)
+            {
+                Console.WriteLine("what you want to do?");
+                string answer = Console.ReadLine();
+                answer = answer.Trim();
+                if (answer.ToLower().Equals("listall"))
+                {
+                    Logger.Info("User listed all accounts");
+                    ListAll(accountsd);
+                }
+                else if (answer.ToLower().StartsWith("list"))
+                {
+                    Logger.Info($"User listed all transactions for account named {answer}");
+                    int findname = answer.LastIndexOf("List") + 5;
+                    string name = answer.Substring(findname);
+                    List(accountsd, name.Trim());
+                }
+                else if (answer.ToLower().Equals("exit"))
+                {
+                    Logger.Info("User wants to exit");
+                    exit = true;
+                }
+                else
+                {
+                    Logger.Warn("invalid option chosen");
+                    Console.WriteLine("invalid option");
+                }
+            }
+            Logger.Info("Transaction 2012 ended");
+        }
         
         
         
@@ -142,7 +177,36 @@ namespace SupportBank
                 XmlSerializer serializer = new XmlSerializer(typeof(List<Transaction>),new XmlRootAttribute("TransactionList"));
 
                 //List<Transaction> a = (List<Transaction>)serializer.Deserialize(reader);
-                var b = serializer.Deserialize(reader);
+                List<Transaction> b = (List < Transaction > )serializer.Deserialize(reader);
+                foreach(Transaction t in b) {
+                    t.FromAccount = t.p.FromAccount;
+                    t.ToAccount = t.p.ToAccount;
+
+                    string date = t.Date;
+                    string from = t.FromAccount;
+                    string to = t.ToAccount;
+                    string narrative = t.Narrative;
+                    decimal amount = t.Amount;
+                    if (accountsd.ContainsKey(from.ToLower()))
+                    {
+                        ExistingAccount(from, date, from, to, narrative, -amount, accountsd);
+
+                    }
+                    else
+                    {
+                        NewAccount(from, date, from, to, narrative, -amount, accountsd);
+                    }
+
+                    if (accountsd.ContainsKey(to.ToLower()))
+                    {
+                        ExistingAccount(to, date, from, to, narrative, amount, accountsd);
+
+                    }
+                    else
+                    {
+                        NewAccount(to, date, from, to, narrative, amount, accountsd);
+                    }
+                }
 /*
                 if (a.Count == 0)
                     Console.WriteLine("nothing added");
