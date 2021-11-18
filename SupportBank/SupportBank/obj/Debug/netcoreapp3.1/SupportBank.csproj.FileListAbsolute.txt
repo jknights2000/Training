@@ -12,3 +12,6 @@ C:\Users\Joshua.knights\Work\Training\Training\SupportBank\SupportBank\obj\Debug
 C:\Users\Joshua.knights\Work\Training\Training\SupportBank\SupportBank\obj\Debug\netcoreapp3.1\SupportBank.dll
 C:\Users\Joshua.knights\Work\Training\Training\SupportBank\SupportBank\obj\Debug\netcoreapp3.1\SupportBank.pdb
 C:\Users\Joshua.knights\Work\Training\Training\SupportBank\SupportBank\obj\Debug\netcoreapp3.1\SupportBank.genruntimeconfig.cache
+C:\Users\Joshua.knights\Work\Training\Training\SupportBank\SupportBank\bin\Debug\netcoreapp3.1\NLog.dll
+C:\Users\Joshua.knights\Work\Training\Training\SupportBank\SupportBank\bin\Debug\netcoreapp3.1\Json.Net.dll
+C:\Users\Joshua.knights\Work\Training\Training\SupportBank\SupportBank\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll

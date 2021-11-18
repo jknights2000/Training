@@ -4,20 +4,17 @@ using System.Text;
 
 namespace SupportBank
 {
-    class Account
+    class Account:List<Transaction>
     {
-        List<Transaction> Transactions = new List<Transaction>();
+        
         public string Name { get; set;}
         public decimal Amount { get; set;}
+        public Account(string Name,decimal Ammount)
+        {
+            this.Name = Name;
+            this.Amount = Ammount;
+        }
 
-        public void addToTrans(Transaction t)
-        {
-            Transactions.Add(t);
-        }
-        public List<Transaction> getTrans()
-        {
-            return Transactions;
-        }
 
     }
 }
