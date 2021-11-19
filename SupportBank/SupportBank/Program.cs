@@ -12,7 +12,7 @@ namespace SupportBank
     {
        
         private static readonly ILogger Logger = LogManager.GetCurrentClassLogger();
-
+       
         static void Main(string[] args)
         {
             var config = new LoggingConfiguration();
@@ -20,21 +20,17 @@ namespace SupportBank
             config.AddTarget("File Logger", target);
             config.LoggingRules.Add(new LoggingRule("*", LogLevel.Debug, target));
             LogManager.Configuration = config;
-            Trans2012();
-            //XAML(@"C:\Users\Joshua.knights\Work\Training\Training\SupportBank\SupportBank\Transactions2012.xml");
-            //Trans2013();
-            //Trans2014();
-            //Trans2015();
-            //JSON(@"C:\Users\Joshua.knights\Work\Training\Training\SupportBank\SupportBank\Transactions2013.json");
+            Menu();
+           // AllTransactions alltransactions = new AllTransactions();
+            //Dictionary<string, Account> accountsd = CSV(@"C:\Users\Joshua.knights\Work\Training\Training\SupportBank\SupportBank\Transactions2014.csv",alltransactions);
+            //alltransactions.ExportXML("test3");
             
         }
        
-
-        
-        public static void Trans2012()
+        public static void Menu()
         {
-            Logger.Info("Transaction 2012 strarted");
-            Dictionary<string, Account> accountsd = XAML(@"C:\Users\Joshua.knights\Work\Training\Training\SupportBank\SupportBank\Transactions2012.xml");
+              AllTransactions alltransactions = new AllTransactions();
+            Dictionary<string, Account> accountsd = new Dictionary<string, Account>();
             bool exit = false;
             while (!exit)
             {
@@ -43,15 +39,46 @@ namespace SupportBank
                 answer = answer.Trim();
                 if (answer.ToLower().Equals("listall"))
                 {
-                    Logger.Info("User listed all accounts");
-                    ListAll(accountsd);
+                    if (accountsd.Count > 0)
+                    {
+                        Logger.Info("User listed all accounts");
+                        ListAll(accountsd);
+                    }
+                    else
+                    {
+                        Console.WriteLine("no file imported");
+                    }
                 }
                 else if (answer.ToLower().StartsWith("list"))
                 {
-                    Logger.Info($"User listed all transactions for account named {answer}");
-                    int findname = answer.LastIndexOf("List") + 5;
-                    string name = answer.Substring(findname);
-                    List(accountsd, name.Trim());
+                    if (accountsd.Count > 0)
+                    {
+                        Logger.Info($"User listed all transactions for account named {answer}");
+                        int findname = answer.ToLower().LastIndexOf("list") + 5;
+                        string name = answer.Substring(findname);
+                        List(accountsd, name.Trim());
+                    }
+                    else
+                    {
+                        Console.WriteLine("no file imported");
+                        Logger.Warn("no file imported");
+                    }
+                }
+                else if (answer.ToLower().StartsWith("import"))
+                { 
+                    try
+                    {
+                        accountsd = Import(answer, alltransactions, accountsd);
+                    }catch(Exception e)
+                    {
+                        Console.WriteLine(e.Message);
+                        Logger.Error(e.Message);
+                    }
+
+                }
+                else if (answer.ToLower().StartsWith("export"))
+                {
+                    Export(answer, alltransactions);
                 }
                 else if (answer.ToLower().Equals("exit"))
                 {
@@ -64,13 +91,104 @@ namespace SupportBank
                     Console.WriteLine("invalid option");
                 }
             }
-            Logger.Info("Transaction 2012 ended");
         }
-        
-        
-        
-        public static Dictionary<string,Account> CSV(string path)
+       public static Dictionary<string, Account> Import(string answer,AllTransactions alltransactions,Dictionary<string,Account> accountsd)
         {
+            string extention;
+            int pathstart = answer.ToLower().LastIndexOf("import") + 7;
+            string path = answer.Substring(pathstart);
+            if (File.Exists(path))
+            {
+                extention = Path.GetExtension(path);
+                switch (extention)
+                {
+                    case ".csv":
+                        accountsd = CSV(path, alltransactions);
+                        return accountsd;
+                    case ".json":
+                        accountsd = JSON(path, alltransactions);
+                        return accountsd;
+                    case ".xml":
+                        accountsd = XML(path, alltransactions);
+                        return accountsd;
+                    case "":
+                        throw(new Exception ("this is not directed to a file"));
+
+                    default:
+                        throw (new Exception("This file is not supported"));
+
+
+                }
+            }
+            else
+            {
+                throw (new Exception("File doesnt exist"));
+                
+            }
+        }
+        public static void Export(string answer,AllTransactions alltransactions)
+        {
+            if (alltransactions.Count <= 0)
+            {
+                Console.WriteLine("nohting to export");
+
+            }
+            else
+            {
+                int filenamestart = answer.ToLower().LastIndexOf("export") + 7;
+                string filename = answer.Substring(filenamestart);
+                Console.WriteLine($"what type of file do you want {filename} to be stored as?");
+                string filetype = Console.ReadLine();
+                switch (filetype.Trim().ToLower())
+                {
+                    case ".csv":case "csv":
+                        try
+                        {
+                            alltransactions.ExportCSV(filename);
+                        }
+                        catch (Exception e)
+                        {
+                            Console.WriteLine(e.Message);
+                            Logger.Error(e.Message);
+                        }
+                        break;
+                    case ".json":case "json":
+                        try
+                        {
+                            alltransactions.ExportJSON(filename);
+                        }
+                        catch (Exception e)
+                        {
+                            Console.WriteLine(e.Message);
+                            Logger.Error(e.Message);
+                        }
+                        break;
+                    case ".xml":case "xml":
+                        try
+                        {
+                            alltransactions.ExportXML(filename);
+                        }
+                        catch (Exception e)
+                        {
+                            Console.WriteLine(e.Message);
+                            Logger.Error(e.Message);
+                        }
+                        break;
+                    case "":
+                        Console.WriteLine("no file type specified");
+                        Logger.Error("no file type specified");
+                        break;
+                    default:
+                        Console.WriteLine("This file type is not supported");
+                        Logger.Error(filetype + " is not supported");
+                        break;
+                }
+
+            }
+        }
+        public static Dictionary<string,Account> CSV(string path,AllTransactions alltransactions)
+        {
+            alltransactions.Clear();
             Dictionary<string, Account> accountsd = new Dictionary<string, Account>();
             using (var reader = new StreamReader(path))
             {
@@ -105,7 +223,7 @@ namespace SupportBank
                         skip = true;
                         Logger.Error($"{values[4]} is not a valid decimal");
                     }
-
+                    alltransactions.Add(new Transaction(date, from, to, narrative, amount));
                     if (accountsd.ContainsKey(from.ToLower()) && !skip)
                     {
                         ExistingAccount(from, date, from, to, narrative, -amount, accountsd);
@@ -130,14 +248,16 @@ namespace SupportBank
             Logger.Info("Data added");
             return accountsd;
         }
-        public static Dictionary<string, Account> JSON(string path)
+        public static Dictionary<string, Account> JSON(string path, AllTransactions alltransactions)
         {
+            alltransactions.Clear();
             List<Transaction> a = new List<Transaction>();
             using (var reader = new StreamReader(path))
             {
                 string json = reader.ReadToEnd();
                 a = JsonConvert.DeserializeObject<List<Transaction>>(json);
             }
+
             Dictionary<string, Account> accountsd = new Dictionary<string, Account>();
             
             foreach (Transaction t in a)
@@ -147,6 +267,9 @@ namespace SupportBank
                 string to = t.ToAccount;
                 string narrative = t.Narrative;
                 decimal amount = t.Amount;
+
+                alltransactions.Add(new Transaction(date, from, to, narrative, amount));
+
                 if (accountsd.ContainsKey(from.ToLower()) )
                 {
                     ExistingAccount(from, date, from, to, narrative, -amount, accountsd);
@@ -169,8 +292,9 @@ namespace SupportBank
             }
             return accountsd;
         }
-        public static Dictionary<string, Account> XAML(string path)
+        public static Dictionary<string, Account> XML(string path, AllTransactions alltransactions)
         {
+            alltransactions.Clear();
             Dictionary<string, Account> accountsd = new Dictionary<string, Account>();
             using (var reader = new StreamReader(path))
             {
@@ -187,6 +311,7 @@ namespace SupportBank
                     string to = t.ToAccount;
                     string narrative = t.Narrative;
                     decimal amount = t.Amount;
+                    alltransactions.Add(new Transaction(date, from, to, narrative, amount));
                     if (accountsd.ContainsKey(from.ToLower()))
                     {
                         ExistingAccount(from, date, from, to, narrative, -amount, accountsd);
@@ -207,16 +332,7 @@ namespace SupportBank
                         NewAccount(to, date, from, to, narrative, amount, accountsd);
                     }
                 }
-/*
-                if (a.Count == 0)
-                    Console.WriteLine("nothing added");
 
-                foreach(Transaction t in a)
-                {
-                    Console.WriteLine(string.Format("{0,10} || {1,-10} || {2,-10} || {3,-40} || {4,-8} ||", t.Date, t.FromAccount, t.ToAccount, t.Narrative, t.Amount.ToString("C")));
-                
-                }
-*/
             }
             
                 return accountsd;
@@ -227,114 +343,7 @@ namespace SupportBank
         
         
         
-        
-        
-        public static void Trans2013()
-        {
-            Logger.Info("Transaction 2013 strarted");
-            Dictionary<string, Account> accountsd = JSON(@"C:\Users\Joshua.knights\Work\Training\Training\SupportBank\SupportBank\Transactions2013.json");
-            bool exit = false;
-            while (!exit)
-            {
-                Console.WriteLine("what you want to do?");
-                string answer = Console.ReadLine();
-                answer = answer.Trim();
-                if (answer.ToLower().Equals("listall"))
-                {
-                    Logger.Info("User listed all accounts");
-                    ListAll(accountsd);
-                }
-                else if (answer.ToLower().StartsWith("list"))
-                {
-                    Logger.Info($"User listed all transactions for account named {answer}");
-                    int findname = answer.LastIndexOf("List") + 5;
-                    string name = answer.Substring(findname);
-                    List(accountsd, name.Trim());
-                }
-                else if (answer.ToLower().Equals("exit"))
-                {
-                    Logger.Info("User wants to exit");
-                    exit = true;
-                }
-                else
-                {
-                    Logger.Warn("invalid option chosen");
-                    Console.WriteLine("invalid option");
-                }
-            }
-            Logger.Info("Transaction 2013 ended");
-        }
-        public static void Trans2014()
-        {
-            Logger.Info("Transaction 2014 strarted");
-            Dictionary<string, Account> accountsd = CSV(@"C:\Users\Joshua.knights\Work\Training\Training\SupportBank\SupportBank\Transactions2014.csv");
-            bool exit = false;
-            while (!exit)
-            {
-                Console.WriteLine("what you want to do?");
-                string answer = Console.ReadLine();
-                answer = answer.Trim();
-                if (answer.ToLower().Equals("listall"))
-                {
-                    Logger.Info("User listed all accounts");
-                    ListAll(accountsd);
-                }
-                else if (answer.ToLower().StartsWith("list"))
-                {
-                    Logger.Info($"User listed all transactions for account named {answer}");
-                    int findname = answer.LastIndexOf("List") + 5;
-                    string name = answer.Substring(findname);
-                    List(accountsd, name.Trim());
-                }
-                else if (answer.ToLower().Equals("exit"))
-                {
-                    Logger.Info("User wants to exit");
-                    exit = true;
-                }
-                else
-                {
-                    Logger.Warn("invalid option chosen");
-                    Console.WriteLine("invalid option");
-                }
-            }
-            Logger.Info("Transaction 2014 ended");
-        }
-        public static void Trans2015()
-        {
 
-            Logger.Info("Transaction 2015 strarted");
-            Dictionary<string, Account> accountsd = CSV(@"C:\Users\Joshua.knights\Work\Training\Training\SupportBank\SupportBank\DodgyTransactions2015.csv");
-            bool exit = false;
-            while (!exit)
-            {
-                Console.WriteLine("what you want to do?");
-                string answer = Console.ReadLine();
-                answer = answer.Trim();
-                if (answer.ToLower().Equals("listall"))
-                {
-                    Logger.Info("User listed all accounts");
-                    ListAll(accountsd);
-                }
-                else if (answer.ToLower().StartsWith("list"))
-                {
-                    Logger.Info($"User listed all transactions for account named {answer}");
-                    int findname = answer.LastIndexOf("List") + 5;
-                    string name = answer.Substring(findname);
-                    List(accountsd, name.Trim());
-                }
-                else if (answer.ToLower().Equals("exit"))
-                {
-                    Logger.Info("User wants to exit");
-                    exit = true;
-                }
-                else
-                {
-                    Logger.Warn("invalid option chosen");
-                    Console.WriteLine("invalid option");
-                }
-            }
-            Logger.Info("Transaction 2015 ended");
-        }
         public static void NewAccount(string accountname,string date,string from, string to, string narrative, decimal amount, Dictionary<string, Account> accountsd)
         {
             Account A = new Account(accountname, amount);
@@ -349,6 +358,8 @@ namespace SupportBank
             accountsd[accountname.ToLower()].Amount += amount;
             Logger.Info($"update list of transactions and amount for account with the name {accountname}");
         }
+
+
         public static void ListAll(Dictionary<string, Account> accountsd)
         {
             foreach(KeyValuePair<string,Account> a in  accountsd)
@@ -390,4 +401,150 @@ namespace SupportBank
           
         }
     }
-}
+} /*
+        public static void Trans2012()
+        {
+            Logger.Info("Transaction 2012 strarted");
+            Dictionary<string, Account> accountsd = XML(@"C:\Users\Joshua.knights\Work\Training\Training\SupportBank\SupportBank\Transactions2012.xml");
+            bool exit = false;
+            while (!exit)
+            {
+                Console.WriteLine("what you want to do?");
+                string answer = Console.ReadLine();
+                answer = answer.Trim();
+                if (answer.ToLower().Equals("listall"))
+                {
+                    Logger.Info("User listed all accounts");
+                    ListAll(accountsd);
+                }
+                else if (answer.ToLower().StartsWith("list"))
+                {
+                    Logger.Info($"User listed all transactions for account named {answer}");
+                    int findname = answer.LastIndexOf("List") + 5;
+                    string name = answer.Substring(findname);
+                    List(accountsd, name.Trim());
+                }
+                else if (answer.ToLower().Equals("exit"))
+                {
+                    Logger.Info("User wants to exit");
+                    exit = true;
+                }
+                else
+                {
+                    Logger.Warn("invalid option chosen");
+                    Console.WriteLine("invalid option");
+                }
+            }
+            Logger.Info("Transaction 2012 ended");
+        }
+        
+        */
+/*  
+
+  public static void Trans2013()
+  {
+      Logger.Info("Transaction 2013 strarted");
+      Dictionary<string, Account> accountsd = JSON(@"C:\Users\Joshua.knights\Work\Training\Training\SupportBank\SupportBank\Transactions2013.json");
+      bool exit = false;
+      while (!exit)
+      {
+          Console.WriteLine("what you want to do?");
+          string answer = Console.ReadLine();
+          answer = answer.Trim();
+          if (answer.ToLower().Equals("listall"))
+          {
+              Logger.Info("User listed all accounts");
+              ListAll(accountsd);
+          }
+          else if (answer.ToLower().StartsWith("list"))
+          {
+              Logger.Info($"User listed all transactions for account named {answer}");
+              int findname = answer.LastIndexOf("List") + 5;
+              string name = answer.Substring(findname);
+              List(accountsd, name.Trim());
+          }
+          else if (answer.ToLower().Equals("exit"))
+          {
+              Logger.Info("User wants to exit");
+              exit = true;
+          }
+          else
+          {
+              Logger.Warn("invalid option chosen");
+              Console.WriteLine("invalid option");
+          }
+      }
+      Logger.Info("Transaction 2013 ended");
+  }
+  public static void Trans2014()
+  {
+      Logger.Info("Transaction 2014 strarted");
+      Dictionary<string, Account> accountsd = CSV(@"C:\Users\Joshua.knights\Work\Training\Training\SupportBank\SupportBank\Transactions2014.csv");
+      bool exit = false;
+      while (!exit)
+      {
+          Console.WriteLine("what you want to do?");
+          string answer = Console.ReadLine();
+          answer = answer.Trim();
+          if (answer.ToLower().Equals("listall"))
+          {
+              Logger.Info("User listed all accounts");
+              ListAll(accountsd);
+          }
+          else if (answer.ToLower().StartsWith("list"))
+          {
+              Logger.Info($"User listed all transactions for account named {answer}");
+              int findname = answer.LastIndexOf("List") + 5;
+              string name = answer.Substring(findname);
+              List(accountsd, name.Trim());
+          }
+          else if (answer.ToLower().Equals("exit"))
+          {
+              Logger.Info("User wants to exit");
+              exit = true;
+          }
+          else
+          {
+              Logger.Warn("invalid option chosen");
+              Console.WriteLine("invalid option");
+          }
+      }
+      Logger.Info("Transaction 2014 ended");
+  }
+  public static void Trans2015()
+  {
+
+      Logger.Info("Transaction 2015 strarted");
+      Dictionary<string, Account> accountsd = CSV(@"C:\Users\Joshua.knights\Work\Training\Training\SupportBank\SupportBank\DodgyTransactions2015.csv");
+      bool exit = false;
+      while (!exit)
+      {
+          Console.WriteLine("what you want to do?");
+          string answer = Console.ReadLine();
+          answer = answer.Trim();
+          if (answer.ToLower().Equals("listall"))
+          {
+              Logger.Info("User listed all accounts");
+              ListAll(accountsd);
+          }
+          else if (answer.ToLower().StartsWith("list"))
+          {
+              Logger.Info($"User listed all transactions for account named {answer}");
+              int findname = answer.LastIndexOf("List") + 5;
+              string name = answer.Substring(findname);
+              List(accountsd, name.Trim());
+          }
+          else if (answer.ToLower().Equals("exit"))
+          {
+              Logger.Info("User wants to exit");
+              exit = true;
+          }
+          else
+          {
+              Logger.Warn("invalid option chosen");
+              Console.WriteLine("invalid option");
+          }
+      }
+      Logger.Info("Transaction 2015 ended");
+  }
+*/

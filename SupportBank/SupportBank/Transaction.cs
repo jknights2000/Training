@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -13,11 +14,12 @@ namespace SupportBank
         public string Date { get; set; }
         
         [XmlElement("Parties")]
+        [JsonIgnore]
         public Pearent p { get; set; }
 
-        [XmlElement("From")]
+        [XmlIgnore]
         public string FromAccount { get; set; }
-        [XmlElement("To")]
+        [XmlIgnore]
         public string ToAccount { get; set; }
         [XmlElement("Description")]
         public string Narrative { get; set; }
