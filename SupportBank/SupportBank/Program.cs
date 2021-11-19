@@ -29,7 +29,7 @@ namespace SupportBank
        
         public static void Menu()
         {
-              AllTransactions alltransactions = new AllTransactions();
+            AllTransactions alltransactions = new AllTransactions();
             Dictionary<string, Account> accountsd = new Dictionary<string, Account>();
             bool exit = false;
             while (!exit)
@@ -68,7 +68,9 @@ namespace SupportBank
                 { 
                     try
                     {
-                        accountsd = Import(answer, alltransactions, accountsd);
+                        Import i = new Import(answer);
+                        accountsd =  i.accountsd;
+                        alltransactions = i.alltransactions;
                     }catch(Exception e)
                     {
                         Console.WriteLine(e.Message);
@@ -78,7 +80,7 @@ namespace SupportBank
                 }
                 else if (answer.ToLower().StartsWith("export"))
                 {
-                    Export(answer, alltransactions);
+                    new Export(answer, alltransactions);
                 }
                 else if (answer.ToLower().Equals("exit"))
                 {
@@ -92,251 +94,9 @@ namespace SupportBank
                 }
             }
         }
-       public static Dictionary<string, Account> Import(string answer,AllTransactions alltransactions,Dictionary<string,Account> accountsd)
-        {
-            string extention;
-            int pathstart = answer.ToLower().LastIndexOf("import") + 7;
-            string path = answer.Substring(pathstart);
-            if (File.Exists(path))
-            {
-                extention = Path.GetExtension(path);
-                switch (extention)
-                {
-                    case ".csv":
-                        accountsd = CSV(path, alltransactions);
-                        return accountsd;
-                    case ".json":
-                        accountsd = JSON(path, alltransactions);
-                        return accountsd;
-                    case ".xml":
-                        accountsd = XML(path, alltransactions);
-                        return accountsd;
-                    case "":
-                        throw(new Exception ("this is not directed to a file"));
-
-                    default:
-                        throw (new Exception("This file is not supported"));
-
-
-                }
-            }
-            else
-            {
-                throw (new Exception("File doesnt exist"));
-                
-            }
-        }
-        public static void Export(string answer,AllTransactions alltransactions)
-        {
-            if (alltransactions.Count <= 0)
-            {
-                Console.WriteLine("nohting to export");
-
-            }
-            else
-            {
-                int filenamestart = answer.ToLower().LastIndexOf("export") + 7;
-                string filename = answer.Substring(filenamestart);
-                Console.WriteLine($"what type of file do you want {filename} to be stored as?");
-                string filetype = Console.ReadLine();
-                switch (filetype.Trim().ToLower())
-                {
-                    case ".csv":case "csv":
-                        try
-                        {
-                            alltransactions.ExportCSV(filename);
-                        }
-                        catch (Exception e)
-                        {
-                            Console.WriteLine(e.Message);
-                            Logger.Error(e.Message);
-                        }
-                        break;
-                    case ".json":case "json":
-                        try
-                        {
-                            alltransactions.ExportJSON(filename);
-                        }
-                        catch (Exception e)
-                        {
-                            Console.WriteLine(e.Message);
-                            Logger.Error(e.Message);
-                        }
-                        break;
-                    case ".xml":case "xml":
-                        try
-                        {
-                            alltransactions.ExportXML(filename);
-                        }
-                        catch (Exception e)
-                        {
-                            Console.WriteLine(e.Message);
-                            Logger.Error(e.Message);
-                        }
-                        break;
-                    case "":
-                        Console.WriteLine("no file type specified");
-                        Logger.Error("no file type specified");
-                        break;
-                    default:
-                        Console.WriteLine("This file type is not supported");
-                        Logger.Error(filetype + " is not supported");
-                        break;
-                }
-
-            }
-        }
-        public static Dictionary<string,Account> CSV(string path,AllTransactions alltransactions)
-        {
-            alltransactions.Clear();
-            Dictionary<string, Account> accountsd = new Dictionary<string, Account>();
-            using (var reader = new StreamReader(path))
-            {
-                string headerLine = reader.ReadLine();
-                //Console.WriteLine(headerLine);
-
-                string line;
-                while ((line = reader.ReadLine()) != null)
-                {
-                    bool skip = false;
-                    var values = line.Split(',');
-                    string date = values[0];
-                    try
-                    {
-                        DateTime d = DateTime.Parse(date);
-                    }
-                    catch (Exception e)
-                    {
-                        skip = true;
-                        Logger.Error($"{date} is not a vaild date");
-                    }
-                    string from = values[1];
-                    string to = values[2];
-                    string narrative = values[3];
-                    decimal amount = 0;
-                    try
-                    {
-                        amount = decimal.Parse(values[4]);
-                    }
-                    catch (Exception e)
-                    {
-                        skip = true;
-                        Logger.Error($"{values[4]} is not a valid decimal");
-                    }
-                    alltransactions.Add(new Transaction(date, from, to, narrative, amount));
-                    if (accountsd.ContainsKey(from.ToLower()) && !skip)
-                    {
-                        ExistingAccount(from, date, from, to, narrative, -amount, accountsd);
-
-                    }
-                    else if (!skip)
-                    {
-                        NewAccount(from, date, from, to, narrative, -amount, accountsd);
-                    }
-
-                    if (accountsd.ContainsKey(to.ToLower()) && !skip)
-                    {
-                        ExistingAccount(to, date, from, to, narrative, amount, accountsd);
-
-                    }
-                    else if (!skip)
-                    {
-                        NewAccount(to, date, from, to, narrative, amount, accountsd);
-                    }
-                }
-            }
-            Logger.Info("Data added");
-            return accountsd;
-        }
-        public static Dictionary<string, Account> JSON(string path, AllTransactions alltransactions)
-        {
-            alltransactions.Clear();
-            List<Transaction> a = new List<Transaction>();
-            using (var reader = new StreamReader(path))
-            {
-                string json = reader.ReadToEnd();
-                a = JsonConvert.DeserializeObject<List<Transaction>>(json);
-            }
-
-            Dictionary<string, Account> accountsd = new Dictionary<string, Account>();
-            
-            foreach (Transaction t in a)
-            {
-                string date = t.Date;
-                string from = t.FromAccount;
-                string to = t.ToAccount;
-                string narrative = t.Narrative;
-                decimal amount = t.Amount;
-
-                alltransactions.Add(new Transaction(date, from, to, narrative, amount));
-
-                if (accountsd.ContainsKey(from.ToLower()) )
-                {
-                    ExistingAccount(from, date, from, to, narrative, -amount, accountsd);
-
-                }
-                else 
-                {
-                    NewAccount(from, date, from, to, narrative, -amount, accountsd);
-                }
-
-                if (accountsd.ContainsKey(to.ToLower()))
-                {
-                    ExistingAccount(to, date, from, to, narrative, amount, accountsd);
-
-                }
-                else 
-                {
-                    NewAccount(to, date, from, to, narrative, amount, accountsd);
-                }
-            }
-            return accountsd;
-        }
-        public static Dictionary<string, Account> XML(string path, AllTransactions alltransactions)
-        {
-            alltransactions.Clear();
-            Dictionary<string, Account> accountsd = new Dictionary<string, Account>();
-            using (var reader = new StreamReader(path))
-            {
-                XmlSerializer serializer = new XmlSerializer(typeof(List<Transaction>),new XmlRootAttribute("TransactionList"));
-
-                //List<Transaction> a = (List<Transaction>)serializer.Deserialize(reader);
-                List<Transaction> b = (List < Transaction > )serializer.Deserialize(reader);
-                foreach(Transaction t in b) {
-                    t.FromAccount = t.p.FromAccount;
-                    t.ToAccount = t.p.ToAccount;
-
-                    string date = t.Date;
-                    string from = t.FromAccount;
-                    string to = t.ToAccount;
-                    string narrative = t.Narrative;
-                    decimal amount = t.Amount;
-                    alltransactions.Add(new Transaction(date, from, to, narrative, amount));
-                    if (accountsd.ContainsKey(from.ToLower()))
-                    {
-                        ExistingAccount(from, date, from, to, narrative, -amount, accountsd);
-
-                    }
-                    else
-                    {
-                        NewAccount(from, date, from, to, narrative, -amount, accountsd);
-                    }
-
-                    if (accountsd.ContainsKey(to.ToLower()))
-                    {
-                        ExistingAccount(to, date, from, to, narrative, amount, accountsd);
-
-                    }
-                    else
-                    {
-                        NewAccount(to, date, from, to, narrative, amount, accountsd);
-                    }
-                }
-
-            }
-            
-                return accountsd;
-        }
+       
+ 
+        
         
         
         
@@ -344,20 +104,7 @@ namespace SupportBank
         
         
 
-        public static void NewAccount(string accountname,string date,string from, string to, string narrative, decimal amount, Dictionary<string, Account> accountsd)
-        {
-            Account A = new Account(accountname, amount);
-            Transaction t = new Transaction(date, from, to, narrative, amount);
-            A.Add(t);
-            accountsd.Add(accountname.ToLower(), A);
-            Logger.Info($"New Account for name {accountname} has been made");
-        }
-        public static void ExistingAccount(string accountname,string date, string from, string to, string narrative, decimal amount, Dictionary<string, Account> accountsd)
-        {
-            accountsd[accountname.ToLower()].Add(new Transaction(date, from, to, narrative, amount));
-            accountsd[accountname.ToLower()].Amount += amount;
-            Logger.Info($"update list of transactions and amount for account with the name {accountname}");
-        }
+
 
 
         public static void ListAll(Dictionary<string, Account> accountsd)

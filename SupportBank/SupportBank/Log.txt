@@ -1,0 +1,2 @@
+2021-11-19 16:16:05.2958 Error - SupportBank.Program: File doesnt exist
+2021-11-19 16:16:18.4432 Info - SupportBank.Program: User wants to exit

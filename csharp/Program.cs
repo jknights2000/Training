@@ -46,34 +46,15 @@ namespace csharp
                 Console.WriteLine("name, sellIn, quality");
                 for (var j = 0; j < Items.Count; j++)
                 {
-                    System.Console.WriteLine(Items[j]);
+                    Console.WriteLine(Items[j]);
                 }
                 Console.WriteLine("");
                 app.UpdateQuality();
             }
             
 
-            //ApprovalTest at = new ApprovalTest();
-            //at.ThirtyDays();
-        }
-        /*
-        public static void RunTests()
-        {
             
-            GildedRoseTest gt = new GildedRoseTest();
-            gt.name();
-            gt.Sellin();
-            gt.MinQuality();
-            gt.MaxQuality();
-            gt.Sulfras();
-            gt.Brie();
-            gt.PastSellin();
-            gt.Concert10();
-            gt.Concert5();
-            gt.Concert0();
-            gt.ConjuredAlone();
-            gt.ConjuredItem();
         }
-        */
+        
     }
 }
