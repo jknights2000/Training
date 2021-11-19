@@ -10,6 +10,7 @@ namespace SupportBank
         public string Date { get; set; }
         
         [XmlElement("Parties")]
+        
         [JsonIgnore]
         public Pearent p { get; set; }
 
